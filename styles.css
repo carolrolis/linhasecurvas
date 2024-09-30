@@ -31,7 +31,7 @@
 }
 
 :root {
-  --color1: #bc4584;
+  --color1: #BC4584;
   --color2: #FDDCE5;
 }
 
@@ -255,22 +255,12 @@ nav {
 /* HOME - BENEFITS */
 
 
-
-/* CATALOGO */
-#catalogo {
-  display: none;
-}
-
-/* CATALOGO */
-
-
-
 /* FOOTER */
 footer {
   width: 100%;
   background-color: var(--color2);
   text-align: center;
-  position: relative;
+  position: sticky;
   bottom: 0;
 }
 
