@@ -5,6 +5,7 @@ const rightArrow = document.getElementById('right-arrow');
 const homePage = document.getElementById('home');
 const catalogoPage = document.getElementById('catalogo');
 const sobrePage = document.getElementById('sobre');
+const welcomeButton = document.getElementById('welcome-button');
 const homeLink = document.querySelector('a[href="#home"]');
 const catalogoLink = document.querySelector('a[href="#catalogo"]');
 const sobreLink = document.querySelector('a[href="#sobre"]');
@@ -53,7 +54,7 @@ function topFunction() {
 // Scroll to Top Button //
 
 
-// CHANGE PAGES //
+// CHANGE PAGES - NAVBAR AND BUTTON //
   homeLink.addEventListener("click", function(event) {
     event.preventDefault();
 
@@ -64,6 +65,8 @@ function topFunction() {
     catalogoSquare.style.display = "none";
     sobreSquare.style.display = "none";
     homeSquare.style.display = "inline";
+
+    window.location.hash = "#home";
   })
 
   catalogoLink.addEventListener("click", function(event) {
@@ -76,6 +79,8 @@ function topFunction() {
     homeSquare.style.display = "none";
     sobreSquare.style.display = "none";
     catalogoSquare.style.display = "inline";
+
+    window.location.hash = "#catalogo";
   })
 
   sobreLink.addEventListener("click", function(event) {
@@ -88,5 +93,24 @@ function topFunction() {
     homeSquare.style.display = "none";
     catalogoSquare.style.display = "none";
     sobreSquare.style.display = "inline";
+
+    window.location.hash = "#sobre";
   })
-// CHANGE PAGES //
+
+  welcomeButton.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    homePage.style.display = "none";
+    sobrePage.style.display = "none";
+    catalogoPage.style.display = "block";
+
+    homeSquare.style.display = "none";
+    sobreSquare.style.display = "none";
+    catalogoSquare.style.display = "inline";
+
+    window.location.hash = "#catalogo";
+  })
+// CHANGE PAGES - NAVBAR AND BUTTON //
+
+// CHANGE PAGES - CATALOGO SECTIONS //
+// CHANGE PAGES - CATALOGO SECTIONS //

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="">
 
-  <title id="title">Atelier Linhas e Curvas!!</title>
+  <title id="title">Atelier Linhas e Curvas</title>
 </head>
 
 <body>
@@ -63,15 +63,21 @@
     </svg>
 
     <nav>
-      <a class="nav-link" href="#home">
-        <container id="square-home" style="display: inline;">&#x25AA;</container>Home
-      </a>
-      <a class="nav-link" href="#catalogo">
-        <container id="square-catalogo" style="display: none;">&#x25AA;</container>Catálogo
-      </a>
-      <a class="nav-link" href="#sobre">
-        <container id="square-sobre" style="display: none;">&#x25AA;</container>Sobre
-      </a>
+      <span id="nav-link-home">
+        <a class="nav-link" href="#home">
+          <container id="square-home" style="display: inline;">&#x25AA;</container>Home
+        </a>
+      </span>
+      <span id="nav-link-catalogo">
+        <a class="nav-link" href="#catalogo">
+          <container id="square-catalogo" style="display: none;">&#x25AA;</container>Catálogo
+        </a>
+      </span>
+      <span id="nav-link-sobre">
+        <a class="nav-link" href="#sobre">
+          <container id="square-sobre" style="display: none;">&#x25AA;</container>Sobre
+        </a>
+      </span>
       <div id="searchbar">
         <input id="searchbar-input" type="text" name="search" placeholder="Pesquisar">
       </div>
@@ -79,7 +85,7 @@
   </header>
 
   <main id="home">
-    <section id="welcome">
+    <section id="home-welcome">
       <div id="welcome-text">
         <h1>Sinta o amor<br>em cada<br>ponto.</h1>
         <h2>No Atelier Linhas & Curvas, onde cada criação é feita para celebrar<br>
@@ -88,10 +94,10 @@
         </h2>
       </div>
       <button id="welcome-button">Conheça a loja</button>
-      <p id="credits">design by Freepik</p>
+      <p>design by Freepik</p>
     </section>
 
-    <section id="preview">
+    <section id="home-preview">
       <h1>Confira algumas peças:</h1>
 
       <div id="left-arrow">
@@ -109,7 +115,6 @@
           </g>
         </svg>
       </div>
-
       <div id="right-arrow">
         <svg fill="#bc4584" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0 0 30.021 30.021"
@@ -125,6 +130,7 @@
           </g>
         </svg>
       </div>
+
       <div id="carousel-div-js">
         <div id="carousel">
           <img class="carousel-img" src="images/carrossel/imgc1.jpg">
@@ -147,7 +153,7 @@
       </div>
     </section>
 
-    <section id="benefits">
+    <section id="home-benefits">
       <div id="smartphone-div" class="benefits">
         <img title="design by Freepik" class="benefits-img" src="images/icons/smartphone.png">
         <h1 class="benefits-text"><strong>Comunicação:</strong> pedidos são efetuados por encomenda, permitindo a
@@ -177,7 +183,87 @@
 
 
   <main id="catalogo" style="display: none;">
-    <h1>Nossas peças:</h1>
+    <section id="catalogo-intro">
+      <h1>Nossas peças</h1>
+      <div id="catalogo-itens">
+        <a class="catalogo-item" id="berco-item-link" href="#berco-item">
+          <h2>Berço</h2>
+        </a>
+        <a class="catalogo-item" id="kitmaternidade-item" href="#kitmaternidade-item">
+          <h2>Kit Maternidade</h2>
+        </a>
+        <a class="catalogo-item" id="fraldas-item-link" href="#fraldas-item">
+          <h2>Fraldas</h2>
+        </a>
+        <a class="catalogo-item" id="mantas-item-link" href="#mantas-item">
+          <h2>Mantas</h2>
+        </a>
+        <a class="catalogo-item" id="toalhas-item-link" href="#toalhas-item">
+          <h2>Toalhas</h2>
+        </a>
+        <a class="catalogo-item" id="batismo-item-link" href="#batismo-item">
+          <h2>Batismo</h2>
+        </a>
+        <a class="catalogo-item" id="naninhas-item-link" href="#naninhas-item">
+          <h2>Naninhas</h2>
+        </a>
+        <a class="catalogo-item" id="organizadores-item-link" href="#organizadores-item">
+          <h2>Organizadores</h2>
+        </a>
+        <a class="catalogo-item" id="trocadores-item-link" href="#trocadores-item">
+          <h2>Trocadores</h2>
+        </a>
+        <a class="catalogo-item" id="ninhos-item-link" href="#ninhos-item">
+          <h2>Ninhos</h2>
+        </a>
+        <a class="catalogo-item" id="almofadas-item-link" href="#almofadas-item">
+          <h2>Almofadas</h2>
+        </a>
+        <a class="catalogo-item" id="rolinhos-item-link" href="#rolinhos-item">
+          <h2>Rolinhos</h2>
+        </a>
+        <a class="catalogo-item" id="farmacinha-item-link" href="#farmacinha-item">
+          <h2>Farmacinha</h2>
+        </a>
+        <a class="catalogo-item" id="portacartaodevacina-item-link" href="#portacartaodevacina-item">
+          <h2>Porta-cartão de vacina</h2>
+        </a>
+        <a class="catalogo-item" id="necessaires-item-link" href="#necessaires-item">
+          <h2>Necessaires</h2>
+        </a>
+        <a class="catalogo-item" id="bolsas-item-link" href="#bolsas-item">
+          <h2>Bolsas</h2>
+        </a>
+        <a class="catalogo-item" id="bonecaseursinhos-item-link" href="#bonecaseursinhos-item">
+          <h2>Bonecas e Ursinhos</h2>
+        </a>
+        <a class="catalogo-item" id="cozinha-item-link" href="#cozinha-item">
+          <h2>Cozinha</h2>
+        </a>
+        <a class="catalogo-item" id="variados-item-link" href="#variados-item">
+          <h2>Variados</h2>
+        </a>
+      </div>
+    </section>
+    <section id="berco-item"></section>
+    <section id="kitmaternidade-item"></section>
+    <section id="fraldas-item"></section>
+    <section id="mantas-item"></section>
+    <section id="toalhas-item"></section>
+    <section id="batismo-item"></section>
+    <section id="naninhas-item"></section>
+    <section id="orgnaizadores-item"></section>
+    <section id="trocadores-item"></section>
+    <section id="ninhos-item"></section>
+    <section id="almofadas-item"></section>
+    <section id="rolinhos-item"></section>
+    <section id="farmacinha-item"></section>
+    <section id="portacartaodevacina-item"></section>
+    <section id="necessaires-item"></section>
+    <section id="bolsas-item"></section>
+    <section id="bonecaseursinhos-item"></section>
+    <section id="cozinha-item"></section>
+    <section id="variados-item"></section>
   </main>
 
 
@@ -203,7 +289,7 @@
       </a>
     </div>
 
-    <div id="footer-copy">
+    <div id="footer-copyright">
       <img src="images/logos/logo1.png">
       <p>Todos os direitos reservados.<br>Fortaleza - Ceará, 2024</p>
     </div>
