@@ -172,13 +172,17 @@ nav {
   border: 3px solid var(--color1);
   border-radius: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-in-out;
   cursor: pointer;
-
 }
 
 #welcome-button:hover {
-  transform: scale(105%, 105%);
-  transition: all .5s ease-in-out;
+  transform: scale(1.08);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.347);
+}
+
+#welcome-button:active {
+  color: var(--color3);
 }
 
 #home-welcome p {
@@ -205,16 +209,16 @@ nav {
   margin-bottom: 40px;
 }
 
-#carousel {
+#carousel-home {
   display: inline-flex;
 }
 
-.carousel-img {
+.carousel-img-home {
   margin: 0 15px 0;
 }
 
-#left-arrow,
-#right-arrow {
+#left-arrow-home,
+#right-arrow-home {
   overflow: hidden;
   position: absolute;
   opacity: 70%;
@@ -222,12 +226,17 @@ nav {
   transform: translateY(-50%);
 }
 
-#left-arrow {
+#left-arrow-home:hover,
+#right-arrow-home:hover {
+  opacity: 100%;
+}
+
+#left-arrow-home {
   display: none;
   left: 10px;
 }
 
-#right-arrow {
+#right-arrow-home {
   right: 10px;
 }
 
@@ -266,8 +275,16 @@ nav {
 
 
 /* CATALOGO - INTRO */
-#catalogo-intro {
+#catalogo {
+  background-image: url(catalogo.jpg);
+  background-color: var(--color2);
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 11%;
+}
+
+#catalogo-intro {
   margin-bottom: 130px;
 }
 
@@ -278,32 +295,81 @@ nav {
   margin-bottom: 60px;
 }
 
-#catalogo-itens {
+#catalogo-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 12%;
 }
 
-.catalogo-item {
+.catalogo-link {
   color: var(--color1);
   width: 70%;
   margin-bottom: 50px;
   border-bottom: 1.5px solid var(--color1);
 }
 
-.catalogo-item:hover {
+.catalogo-link:hover {
   cursor: pointer;
   color: var(--color3);
   border-color: var(--color3);
 }
 
-.catalogo-item h2 {
+.catalogo-link h2 {
   font-size: 1.4rem;
   font-weight: normal;
 }
 
+#voltar-catalogo {
+  position: absolute;
+  opacity: 70%;
+  left: 30px;
+  top: 25%;
+}
+
+#voltar-catalogo:hover {
+  opacity: 100%;
+}
+
 /* CATALOGO - INTRO */
+
+
+/* CATALOGO - ITEM */
+.catalogo-item {
+  margin-bottom: 130px;
+}
+
+.catalogo-item-nome {
+  font-size: 2rem;
+  font-family: 'baby';
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.catalogo-item-conteudo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.catalogo-item-texto {
+  max-width: 50%;
+}
+
+.catalogo-item-texto h2 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 0.6rem;
+}
+
+.catalogo-item-texto p {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.carousel-img-catalogo {
+  border-radius: 30px;
+}
+/* CATALOGO - ITEM */
 
 
 /* FOOTER */
