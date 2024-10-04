@@ -65,17 +65,17 @@
     <nav>
       <span id="nav-link-home">
         <a class="nav-link" href="#home">
-          <container id="square-home" style="display: inline;">&#x25AA;</container>Home
+          <container id="nav-square-home" style="display: inline;">&#x25AA;</container>Home
         </a>
       </span>
       <span id="nav-link-catalogo">
         <a class="nav-link" href="#catalogo">
-          <container id="square-catalogo" style="display: none;">&#x25AA;</container>Catálogo
+          <container id="nav-square-catalogo" style="display: none;">&#x25AA;</container>Catálogo
         </a>
       </span>
       <span id="nav-link-sobre">
         <a class="nav-link" href="#sobre">
-          <container id="square-sobre" style="display: none;">&#x25AA;</container>Sobre
+          <container id="nav-square-sobre" style="display: none;">&#x25AA;</container>Sobre
         </a>
       </span>
       <div id="searchbar">
@@ -100,8 +100,8 @@
     <section id="home-preview">
       <h1>Confira algumas peças:</h1>
 
-      <div id="left-arrow-home">
-        <svg fill="#bc4584" version="1.1" id="left-arrow-svg" xmlns="http://www.w3.org/2000/svg"
+      <div id="home-left-arrow">
+        <svg fill="#bc4584" version="1.1" id="left-arrow-5050" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0 0 30.021 30.021"
           xml:space="preserve" transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -115,8 +115,8 @@
           </g>
         </svg>
       </div>
-      <div id="right-arrow-home">
-        <svg fill="#bc4584" version="1.1" id="right-arrow-svg" xmlns="http://www.w3.org/2000/svg"
+      <div id="home-right-arrow">
+        <svg fill="#bc4584" version="1.1" id="right-arrow-5050" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0 0 30.021 30.021"
           xml:space="preserve" transform="rotate(90)">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -131,7 +131,7 @@
         </svg>
       </div>
 
-      <div id="carousel-div-js-home">
+      <div id="home-carousel-div-js">
         <div id="carousel-home">
           <img class="carousel-img-home" src="images/carrossel/imgc1.jpg">
           <img class="carousel-img-home" src="images/carrossel/imgc2.jpg">
@@ -246,10 +246,10 @@
       </div>
     </section>
 
-    <div id="voltar-catalogo" style="display: none;">
-      <svg fill="#bc4584" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 30.021 30.021"
-        xml:space="preserve" transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)">
+    <div id="back-button-catalogo" style="display: none;">
+      <svg fill="#bc4584" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="40px" height="40px" viewBox="0 0 30.021 30.021" xml:space="preserve"
+        transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
@@ -266,8 +266,42 @@
       <h1 class="catalogo-item-nome">Berço</h1>
       <div class="catalogo-item-conteudo">
         <div class="catalogo-item-texto">
-          <h2>Bolsinha Farmácia</h2>
+          <h2>Berços completos</h2>
           <p></p>
+        </div>
+        <div onclick="prevImage()" class="catalogo-left-arrow">
+          <svg fill="#bc4584" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 30.021 30.021"
+            xml:space="preserve" transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)">
+            <symbol id="left-arrow-4040">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M29.069,22.276c-0.791,0.932-1.917,1.409-3.052,1.409c-0.913,0-1.834-0.312-2.587-0.949l-8.42-7.152l-8.42,7.151 c-1.683,1.43-4.208,1.225-5.639-0.459c-1.43-1.686-1.224-4.208,0.46-5.64l11.01-9.351c1.493-1.269,3.686-1.269,5.178,0 l11.011,9.351C30.294,18.068,30.499,20.591,29.069,22.276z">
+                  </path>
+                </g>
+              </g>
+            </symbol>
+          </svg>
+        </div>
+        <div onclick="prevImage()" class="catalogo-right-arrow">
+          <svg fill="#bc4584" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 30.021 30.021"
+            xml:space="preserve" transform="rotate(90)">
+            <symbol id="right-arrow-4040">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M29.069,22.276c-0.791,0.932-1.917,1.409-3.052,1.409c-0.913,0-1.834-0.312-2.587-0.949l-8.42-7.152l-8.42,7.151 c-1.683,1.43-4.208,1.225-5.639-0.459c-1.43-1.686-1.224-4.208,0.46-5.64l11.01-9.351c1.493-1.269,3.686-1.269,5.178,0 l11.011,9.351C30.294,18.068,30.499,20.591,29.069,22.276z">
+                  </path>
+                </g>
+              </g>
+            </symbol>
+          </svg>
         </div>
       </div>
     </section>
@@ -336,9 +370,30 @@
       <h1 class="catalogo-item-nome">Organizadores</h1>
       <div class="catalogo-item-conteudo">
         <div class="catalogo-item-texto">
-          <h2>Bolsinha Farmácia</h2>
-          <p></p>
+          <h2>Organizadores de maternidade</h2>
+          <p>• Ideal para separar fraldas, roupinhas, entre outros</p>
+          <p>• Variações: <br> - De filó <br> - Com manta e zíper <br> - Saquinho com cordão</p>
         </div>
+
+        <div onclick="prevImage()" class="catalogo-left-arrow">
+          <svg fill="#bc4584" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 30.021 30.021"
+            xml:space="preserve" transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)">
+            <use xlink:href="#left-arrow-4040"></use>
+          </svg>
+        </div>
+        <div onclick="nextImage()" class="catalogo-right-arrow">
+          <svg fill="#bc4584" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 30.021 30.021"
+            xml:space="preserve" transform="rotate(90)">
+            <use xlink:href="#right-arrow-4040"></use>
+          </svg>
+        </div>
+
+        <container class="catalogo-carousel">
+          <img class="catalogo-img-carousel" id="catalogo-img-organizadores"
+            src="images/organizadores/organizador1.jpg">
+        </container>
       </div>
     </section>
 
@@ -353,12 +408,32 @@
     </section>
 
     <section id="ninhos-item" class="catalogo-item" style="display:none">
-      <h1 class="catalogo-item-nome">Ninhos</h1>
+      <h1 class="catalogo-item-nome">Ninho</h1>
       <div class="catalogo-item-conteudo">
         <div class="catalogo-item-texto">
-          <h2>Bolsinha Farmácia</h2>
-          <p></p>
+          <h2>Ninho - redutor de berço</h2>
+          <p>• Possui almofadinha personalizada, zíper, alças e mais</p>
+          <p>• Variações: <br> - Sem babado <br> - Com babado <br> - Com babado inglês</p>
         </div>
+
+        <div onclick="prevImage()" class="catalogo-left-arrow">
+          <svg fill="#bc4584" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 30.021 30.021"
+            xml:space="preserve" transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)">
+            <use xlink:href="#left-arrow-4040"></use>
+          </svg>
+        </div>
+        <div onclick="nextImage()" class="catalogo-right-arrow">
+          <svg fill="#bc4584" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 30.021 30.021"
+            xml:space="preserve" transform="rotate(90)">
+            <use xlink:href="#right-arrow-4040"></use>
+          </svg>
+        </div>
+
+        <container class="catalogo-carousel">
+          <img class="catalogo-img-carousel" id="catalogo-img-ninhos" src="images/ninhos/ninho1.jpg">
+        </container>
       </div>
     </section>
 
@@ -391,40 +466,25 @@
           <p>• Chaveirinho personalizado</p>
           <p>• Possui aba superior</p>
         </div>
-        <!-- <div class="left-arrow-catalogo">
-          <svg fill="#bc4584" version="1.1" id="left-arrow-svg2" xmlns="http://www.w3.org/2000/svg"
+
+        <div onclick="prevImage()" class="catalogo-left-arrow">
+          <svg fill="#bc4584" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 30.021 30.021"
             xml:space="preserve" transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <g>
-                <path
-                  d="M29.069,22.276c-0.791,0.932-1.917,1.409-3.052,1.409c-0.913,0-1.834-0.312-2.587-0.949l-8.42-7.152l-8.42,7.151 c-1.683,1.43-4.208,1.225-5.639-0.459c-1.43-1.686-1.224-4.208,0.46-5.64l11.01-9.351c1.493-1.269,3.686-1.269,5.178,0 l11.011,9.351C30.294,18.068,30.499,20.591,29.069,22.276z">
-                </path>
-              </g>
-            </g>
+            <use xlink:href="#left-arrow-4040"></use>
           </svg>
         </div>
-        <div class="right-arrow-catalogo">
-          <svg fill="#bc4584" version="1.1" id="right-arrow-svg2" xmlns="http://www.w3.org/2000/svg"
+        <div onclick="nextImage()" class="catalogo-right-arrow">
+          <svg fill="#bc4584" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 30.021 30.021"
             xml:space="preserve" transform="rotate(90)">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <g>
-                <path
-                  d="M29.069,22.276c-0.791,0.932-1.917,1.409-3.052,1.409c-0.913,0-1.834-0.312-2.587-0.949l-8.42-7.152l-8.42,7.151 c-1.683,1.43-4.208,1.225-5.639-0.459c-1.43-1.686-1.224-4.208,0.46-5.64l11.01-9.351c1.493-1.269,3.686-1.269,5.178,0 l11.011,9.351C30.294,18.068,30.499,20.591,29.069,22.276z">
-                </path>
-              </g>
-            </g>
+            <use xlink:href="#right-arrow-4040"></use>
           </svg>
-        </div> -->
-        <div class="catalogo-item-carrossel">
-
-          <img class="carousel-img-catalogo" src="images/farmacinha/farmacinha2a.jpg">
         </div>
+
+        <container class="catalogo-carousel">
+          <img class="catalogo-img-carousel" id="catalogo-img-farmacinha" src="images/farmacinha/farmacinha1.jpg">
+        </container>
       </div>
     </section>
 

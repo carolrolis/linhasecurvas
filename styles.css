@@ -19,6 +19,10 @@
   src: url('fontes/Sophia-Script.ttf')
 }
 
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('fontes/DancingScript.ttf');
+}
 
 * {
   scroll-behavior: smooth;
@@ -43,6 +47,7 @@ body {
 }
 
 /* CONFIGURAÇÕES GERAIS */
+
 
 
 /* HEADER */
@@ -99,6 +104,7 @@ nav {
 }
 
 .nav-link container {
+  /* nav square symbol */
   padding-right: 3px;
 }
 
@@ -109,12 +115,6 @@ nav {
   border: none;
   outline: none;
   background: transparent;
-}
-
-#searchbar-input:focus {
-  background-color: rgba(255, 255, 255, 0.404);
-  border-bottom: 1.5px solid var(--color1);
-  font-size: 1.2rem;
 }
 
 #searchbar-input::placeholder {
@@ -135,10 +135,17 @@ nav {
   transform-origin: bottom left;
 }
 
+#searchbar-input:focus {
+  background-color: rgba(255, 255, 255, 0.404);
+  border-bottom: 1.5px solid var(--color1);
+  font-size: 1.2rem;
+}
+
 /* HEADER */
 
 
-/* HOME - WELCOME */
+
+/* HOME - WELCOME SECTION */
 #home-welcome {
   width: 100%;
   padding: 8% 60px 30px;
@@ -167,8 +174,8 @@ nav {
   padding: 0.4em 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.6rem;
-  background: linear-gradient(.25turn, white, var(--color2));
   color: var(--color1);
+  background: linear-gradient(.25turn, white, var(--color2));
   border: 3px solid var(--color1);
   border-radius: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -181,21 +188,19 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.347);
 }
 
-#welcome-button:active {
-  color: var(--color3);
-}
-
 #home-welcome p {
+  /* credits to Freepik image */
   position: absolute;
   right: 5px;
   padding-top: 15px;
   font-size: 0.5rem;
 }
 
-/* HOME - WELCOME */
+/* HOME - WELCOME SECTION */
 
 
-/* HOME - PREVIEW */
+
+/* HOME - PREVIEW SECTION */
 #home-preview {
   margin: 130px 0 130px;
   padding: 0 20px 0;
@@ -217,8 +222,8 @@ nav {
   margin: 0 15px 0;
 }
 
-#left-arrow-home,
-#right-arrow-home {
+#home-left-arrow,
+#home-right-arrow {
   overflow: hidden;
   position: absolute;
   opacity: 70%;
@@ -226,24 +231,25 @@ nav {
   transform: translateY(-50%);
 }
 
-#left-arrow-home:hover,
-#right-arrow-home:hover {
-  opacity: 100%;
-}
-
-#left-arrow-home {
+#home-left-arrow {
   display: none;
   left: 10px;
 }
 
-#right-arrow-home {
+#home-right-arrow {
   right: 10px;
 }
 
-/* HOME - PREVIEW */
+#home-left-arrow:hover,
+#home-right-arrow:hover {
+  opacity: 100%;
+}
+
+/* HOME - PREVIEW SECTION */
 
 
-/* HOME - BENEFITS */
+
+/* HOME - BENEFITS SECTION */
 #home-benefits {
   max-width: 50%;
   margin: 0 auto 130px;
@@ -271,17 +277,17 @@ nav {
   margin-left: 16px;
 }
 
-/* HOME - BENEFITS */
+/* HOME - BENEFITS SECTION */
 
 
-/* CATALOGO - INTRO */
+
+/* CATALOGO - INTRO SECTION */
 #catalogo {
   background-image: url(catalogo.jpg);
-  background-color: var(--color2);
   background-position-x: right;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 11%;
+  padding-top: 10%;
 }
 
 #catalogo-intro {
@@ -320,30 +326,34 @@ nav {
   font-weight: normal;
 }
 
-#voltar-catalogo {
-  position: absolute;
+#back-button-catalogo {
+  max-width: fit-content;
+  position: relative;
   opacity: 70%;
-  left: 30px;
-  top: 25%;
+  left: 2%;
+  padding-top: 2%;
 }
 
-#voltar-catalogo:hover {
+#back-button-catalogo:hover {
   opacity: 100%;
 }
 
-/* CATALOGO - INTRO */
+/* CATALOGO - INTRO SECTION */
 
 
-/* CATALOGO - ITEM */
+
+/* CATALOGO - ITEM SECTIONS */
 .catalogo-item {
-  margin-bottom: 130px;
+  max-width: 80%;
+  margin: -4% auto 130px;
+  position: relative;
 }
 
 .catalogo-item-nome {
+  max-width: fit-content;
   font-size: 2rem;
-  font-family: 'baby';
-  text-align: center;
-  margin-bottom: 60px;
+  font-family: 'Dancing Script';
+  margin: 0 auto 60px;
 }
 
 .catalogo-item-conteudo {
@@ -366,10 +376,39 @@ nav {
   font-weight: normal;
 }
 
-.carousel-img-catalogo {
-  border-radius: 30px;
+.catalogo-carousel img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
-/* CATALOGO - ITEM */
+
+.catalogo-left-arrow,
+.catalogo-right-arrow {
+  position: absolute;
+  opacity: 70%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.catalogo-left-arrow {
+  right: 46%;
+}
+
+.catalogo-right-arrow {
+  right: 0%;
+}
+
+.catalogo-left-arrow:hover,
+.catalogo-right-arrow:hover {
+  opacity: 100%;
+}
+
+/* CATALOGO - ITEM SECTIONS */
 
 
 /* FOOTER */
@@ -425,7 +464,8 @@ footer h1 {
 /* FOOTER */
 
 
-/* Scroll to Top Button */
+
+/* SCROLL TO TOP BUTTON */
 #scroll-top {
   display: none;
   position: fixed;
@@ -443,7 +483,8 @@ footer h1 {
   background-color: #a0a0a0aa;
 }
 
-/* Scroll to Top Button */
+/* SCROLL TO TOP BUTTON */
+
 
 
 /* Media Queries */
