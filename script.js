@@ -34,6 +34,23 @@ const catalogoRightArrow = document.querySelector('.catalogo-right-arrow');
 let changeImageValue;
 let itemMainImg;
 
+const organizadoresImgs =
+  [
+    'images/organizadores/organizador1.jpg',
+    'images/organizadores/organizador2.jpg',
+    'images/organizadores/organizador3.jpg',
+    'images/organizadores/organizador4.jpg'
+  ]
+const ninhosImgs =
+  [
+    'images/ninhos/ninho1.jpg',
+    'images/ninhos/ninho2.jpg',
+    'images/ninhos/ninho3.jpg',
+    'images/ninhos/ninho4.jpg',
+    'images/ninhos/ninho5.jpg',
+    'images/ninhos/ninho6.jpg',
+    'images/ninhos/ninho7.jpg'
+  ]
 const farmacinhaImgs =
   [
     'images/farmacinha/farmacinha1.jpg',
@@ -46,28 +63,11 @@ const farmacinhaImgs =
     'images/farmacinha/farmacinha8.jpg',
     'images/farmacinha/farmacinha9.jpg'
   ]
-const organizadoresImgs =
-  [
-    'images/organizadores/organizador1.jpg',
-    'images/organizadores/organizador2.jpg',
-    'images/organizadores/organizador3.jpg',
-    'images/organizadores/organizador4.jpg'
-  ]
-const ninhosImgs =
-[
-  'images/ninhos/ninho1.jpg',
-  'images/ninhos/ninho2.jpg',
-  'images/ninhos/ninho3.jpg',
-  'images/ninhos/ninho4.jpg',
-  'images/ninhos/ninho5.jpg',
-  'images/ninhos/ninho6.jpg',
-  'images/ninhos/ninho7.jpg'
-]
 
 const imgArrays = {
   farmacinha: farmacinhaImgs,
   organizadores: organizadoresImgs,
-  ninhos: ninhosImgs
+  ninhos: ninhosImgs,
 };
 let currentArray = [];
 let imgIndex = 0;
@@ -197,6 +197,10 @@ function selectCatalogoItem(link) {
   changeImageValue = hrefNew.replace("-item", "");
   itemMainImg = document.getElementById(`catalogo-img-${changeImageValue}`);
   currentArray = imgArrays[changeImageValue];
+
+  console.log('changeImageValue:', changeImageValue);
+  console.log('currentArray:', currentArray);
+  console.log('itemMainImg:', itemMainImg);
 }
 // ========== CHANGE PAGES - CATALOGO ITEM SECTIONS ========== //
 
