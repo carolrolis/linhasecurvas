@@ -21,7 +21,17 @@
 
 @font-face {
   font-family: 'Dancing Script';
-  src: url('fontes/DancingScript.ttf');
+  src: url('fontes/Dancing-Script.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica Bold';
+  src: url('fontes/Helvetica-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Instagram';
+  src: url('fontes/Instagram.otf');
 }
 
 * {
@@ -480,7 +490,7 @@ footer h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 #contact h2 {
@@ -488,17 +498,39 @@ footer h1 {
   margin-right: 10px;
 }
 
-.contact-img {
-  margin-right: 15px;
+.contact-link {
+  background-color: white;
+  margin-right: 8px;
 }
 
 .contact-link:hover {
   cursor: pointer;
+  background-color: var(--color3);
+  #path1whats,
+  #path2whats,
+  #path3whats,
+  #path1insta,
+  #path2insta,
+  #path3insta,
+  #Icon-Setmail,
+  #tspan1whats, #tspan1insta {
+    fill: white;
+  }
 }
 
 #whats,
 #insta {
+  width: 150px;
+  height: 60px;
+  overflow: hidden;
   border-radius: 30px;
+}
+
+#mail {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 #footer-copyright img {
@@ -507,7 +539,7 @@ footer h1 {
 
 #footer-copyright p {
   font-size: 0.75rem;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 /********** FOOTER **********/
@@ -523,8 +555,8 @@ footer h1 {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 2px 2px 0 2px;
   border-radius: 50%;
+  padding:5px 5px 2px;
   background-color: #f3f3f3aa;
 }
 
