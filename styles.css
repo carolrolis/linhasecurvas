@@ -505,7 +505,7 @@ footer h1 {
 
 .contact-link:hover {
   cursor: pointer;
-  background-color: var(--color3);
+  background-color: var(--color1);
   #path1whats,
   #path2whats,
   #path3whats,
