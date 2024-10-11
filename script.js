@@ -30,47 +30,58 @@ const itemsSections = document.querySelectorAll('section[id$="-item"]');
 
 const catalogoLeftArrow = document.querySelector('.catalogo-left-arrow');
 const catalogoRightArrow = document.querySelector('.catalogo-right-arrow');
+const catalogoLeftArrow2 = document.querySelector('.catalogo-left-arrow-2');
+const catalogoRightArrow2 = document.querySelector('.catalogo-right-arrow-2');
 
 let changeImageValue;
+let changeImageValue2;
 let itemMainImg;
+let itemMainImg2;
+let currentArray = [];
+let currentArray2 = [];
+let imgIndex = 0;
 
+
+const bercoImgs =
+  [
+    'images/berco/berco1.png',
+    'images/berco/berco2.png',
+    'images/berco/berco3.png',
+    'images/berco/berco4.png',
+  ]
+const berco2Imgs =
+  [
+    'images/berco/rolo1.png',
+    'images/berco/rolo2.png'
+  ]
 const organizadoresImgs =
   [
-    'images/organizadores/organizador1.jpg',
-    'images/organizadores/organizador2.jpg',
-    'images/organizadores/organizador3.jpg',
-    'images/organizadores/organizador4.jpg'
+    'images/organizadores/organizador1.png',
+    'images/organizadores/organizador2.png',
+    'images/organizadores/organizador3.png',
+    'images/organizadores/organizador4.png',
+    'images/organizadores/portafraldas.png'
   ]
-const ninhosImgs =
+const ninhoImgs =
   [
-    'images/ninhos/ninho1.jpg',
-    'images/ninhos/ninho2.jpg',
-    'images/ninhos/ninho3.jpg',
-    'images/ninhos/ninho4.jpg',
-    'images/ninhos/ninho5.jpg',
-    'images/ninhos/ninho6.jpg',
-    'images/ninhos/ninho7.jpg'
-  ]
-const farmacinhaImgs =
-  [
-    'images/farmacinha/farmacinha1.jpg',
-    'images/farmacinha/farmacinha2.jpg',
-    'images/farmacinha/farmacinha3.jpg',
-    'images/farmacinha/farmacinha4.jpg',
-    'images/farmacinha/farmacinha5.jpg',
-    'images/farmacinha/farmacinha6.jpg',
-    'images/farmacinha/farmacinha7.jpg',
-    'images/farmacinha/farmacinha8.jpg',
-    'images/farmacinha/farmacinha9.jpg'
+    'images/ninho/ninho1.png',
+    'images/ninho/ninho2.png',
+    'images/ninho/ninho3.png',
+    'images/ninho/ninho4.png',
+    'images/ninho/ninho5.png',
+    'images/ninho/ninho6.png',
+    'images/ninho/ninho7.png'
   ]
 
+
 const imgArrays = {
-  farmacinha: farmacinhaImgs,
+  berco: bercoImgs,
+  berco2: berco2Imgs,
   organizadores: organizadoresImgs,
-  ninhos: ninhosImgs,
+  ninho: ninhoImgs,
 };
-let currentArray = [];
-let imgIndex = 0;
+
+
 
 
 
@@ -172,8 +183,12 @@ function sobreDisplay() {
 
 // ========== CHANGE PAGES - CATALOGO ITEM SECTIONS ==========
 itemsLinks.forEach(link => {
-  link.addEventListener('click', () => selectCatalogoItem(link));
-  changeImageCarousel();
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    selectCatalogoItem(link);
+    changeImageCarousel();
+    secondCarousel();
+  });
 });
 
 
@@ -198,9 +213,17 @@ function selectCatalogoItem(link) {
   itemMainImg = document.getElementById(`catalogo-img-${changeImageValue}`);
   currentArray = imgArrays[changeImageValue];
 
+  changeImageValue2 = hrefNew.replace("-item", "2");
+  itemMainImg2 = document.getElementById(`catalogo-img-${changeImageValue}2`);
+  currentArray2 = imgArrays[changeImageValue2];
+
   console.log('changeImageValue:', changeImageValue);
   console.log('currentArray:', currentArray);
   console.log('itemMainImg:', itemMainImg);
+
+  console.log('changeImageValue2:', changeImageValue2);
+  console.log('currentArray2:', currentArray2);
+  console.log('itemMainImg2:', itemMainImg2);
 }
 // ========== CHANGE PAGES - CATALOGO ITEM SECTIONS ========== //
 
@@ -230,6 +253,32 @@ function prevImage() {
   } else if (imgIndex == 0) {
     imgIndex = currentArray.length - 1;
     changeImageCarousel();
+  }
+}
+
+function secondCarousel() {
+  if (currentArray2 && itemMainImg2) {
+    itemMainImg2.setAttribute("src", currentArray2[imgIndex]);
+  }
+}
+
+function nextImage2() {
+  if (imgIndex < currentArray2.length - 1) {
+    imgIndex++;
+    secondCarousel();
+  } else if (imgIndex == currentArray2.length - 1) {
+    imgIndex = 0;
+    secondCarousel();
+  }
+}
+
+function prevImage2() {
+  if (imgIndex > 0) {
+    imgIndex--;
+    secondCarousel();
+  } else if (imgIndex == 0) {
+    imgIndex = currentArray2.length - 1;
+    secondCarousel();
   }
 }
 // ========== CHANGE IMAGES - CATALOGO ITEM SECTIONS ========== //

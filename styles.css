@@ -1,4 +1,4 @@
-/* CONFIGURAÇÕES GERAIS*/
+/*********** CONFIGURAÇÕES GERAIS ***********/
 @font-face {
   font-family: 'baby';
   src: url('fontes/OoohBaby-Regular.ttf');
@@ -46,11 +46,11 @@ body {
   color: var(--color1);
 }
 
-/* CONFIGURAÇÕES GERAIS */
+/********** CONFIGURAÇÕES GERAIS **********/
 
 
 
-/* HEADER */
+/********** HEADER **********/
 header {
   width: 100%;
   position: fixed;
@@ -141,11 +141,11 @@ nav {
   font-size: 1.2rem;
 }
 
-/* HEADER */
+/********** HEADER **********/
 
 
 
-/* HOME - WELCOME SECTION */
+/********** HOME - WELCOME SECTION **********/
 #home-welcome {
   width: 100%;
   padding: 8% 60px 30px;
@@ -196,11 +196,11 @@ nav {
   font-size: 0.5rem;
 }
 
-/* HOME - WELCOME SECTION */
+/********** HOME - WELCOME SECTION **********/
 
 
 
-/* HOME - PREVIEW SECTION */
+/********** HOME - PREVIEW SECTION **********/
 #home-preview {
   margin: 130px 0 130px;
   padding: 0 20px 0;
@@ -245,11 +245,11 @@ nav {
   opacity: 100%;
 }
 
-/* HOME - PREVIEW SECTION */
+/********** HOME - PREVIEW SECTION **********/
 
 
 
-/* HOME - BENEFITS SECTION */
+/********** HOME - BENEFITS SECTION **********/
 #home-benefits {
   max-width: 50%;
   margin: 0 auto 130px;
@@ -277,11 +277,11 @@ nav {
   margin-left: 16px;
 }
 
-/* HOME - BENEFITS SECTION */
+/********** HOME - BENEFITS SECTION **********/
 
 
 
-/* CATALOGO - INTRO SECTION */
+/********** CATALOGO - INTRO SECTION **********/
 #catalogo {
   background-image: url(catalogo.jpg);
   background-position-x: right;
@@ -327,6 +327,7 @@ nav {
 }
 
 #back-button-catalogo {
+  display: none;
   max-width: fit-content;
   position: relative;
   opacity: 70%;
@@ -338,15 +339,15 @@ nav {
   opacity: 100%;
 }
 
-/* CATALOGO - INTRO SECTION */
+/********** CATALOGO - INTRO SECTION **********/
 
 
 
-/* CATALOGO - ITEM SECTIONS */
+/********** CATALOGO - ITEM SECTIONS **********/
 .catalogo-item {
-  max-width: 80%;
+  display: none;
+  max-width: 90%;
   margin: -4% auto 130px;
-  position: relative;
 }
 
 .catalogo-item-nome {
@@ -356,51 +357,68 @@ nav {
   margin: 0 auto 60px;
 }
 
-.catalogo-item-conteudo {
+.catalogo-item-conteudo,
+.catalogo-item-conteudo-2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 100px 0;
+  margin-bottom: 130px;
 }
 
-.catalogo-item-texto {
+.catalogo-item-texto,
+.catalogo-item-texto-2 {
   max-width: 50%;
 }
 
-.catalogo-item-texto h2 {
-  font-size: 1.4rem;
+.catalogo-item-texto h2,
+.catalogo-item-texto-2 h2 {
+  font-size: 1.5rem;
   font-weight: normal;
-  margin-bottom: 0.6rem;
+  margin-bottom: 15px;
 }
 
-.catalogo-item-texto p {
+.catalogo-item-texto p,
+.catalogo-item-texto-2 p {
   font-size: 1.2rem;
   font-weight: normal;
+  margin-bottom: 15px;
 }
 
-.catalogo-carousel img {
+.catalogo-carousel {
+  position: relative;
   width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalogo-img-carousel,
+.catalogo-img-carousel-2 {
+  max-width: 400px;
   height: 400px;
   object-fit: contain;
   pointer-events: none;
-  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  user-select: none;
 }
 
 .catalogo-left-arrow,
 .catalogo-right-arrow {
   position: absolute;
-  opacity: 70%;
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
+  opacity: 70%;
+  cursor: pointer;
 }
 
 .catalogo-left-arrow {
-  right: 46%;
+  left: 0;
 }
 
 .catalogo-right-arrow {
-  right: 0%;
+  right: 0;
 }
 
 .catalogo-left-arrow:hover,
@@ -408,10 +426,41 @@ nav {
   opacity: 100%;
 }
 
-/* CATALOGO - ITEM SECTIONS */
+
+.catalogo-left-arrow-2,
+.catalogo-right-arrow-2 {
+  position: absolute;
+  opacity: 70%;
+}
+
+.catalogo-left-arrow-2 {
+  right: 5%;
+  margin-right: 45%;
+}
+
+.catalogo-right-arrow-2 {
+  right: 5%;
+}
+
+.catalogo-left-arrow-2:hover,
+.catalogo-right-arrow-2:hover {
+  opacity: 100%;
+}
+
+/********** CATALOGO - ITEM SECTIONS **********/
 
 
-/* FOOTER */
+
+/********** SOBRE **********/
+#sobre {
+  display: none;
+}
+
+/********** SOBRE **********/
+
+
+
+/********** FOOTER **********/
 footer {
   width: 100%;
   background-color: var(--color2);
@@ -447,9 +496,9 @@ footer h1 {
   cursor: pointer;
 }
 
-#zap,
+#whats,
 #insta {
-  border-radius: 35px;
+  border-radius: 30px;
 }
 
 #footer-copyright img {
@@ -461,11 +510,11 @@ footer h1 {
   padding-bottom: 10px;
 }
 
-/* FOOTER */
+/********** FOOTER **********/
 
 
 
-/* SCROLL TO TOP BUTTON */
+/********** SCROLL TO TOP BUTTON **********/
 #scroll-top {
   display: none;
   position: fixed;
@@ -483,7 +532,7 @@ footer h1 {
   background-color: #a0a0a0aa;
 }
 
-/* SCROLL TO TOP BUTTON */
+/********** SCROLL TO TOP BUTTON *********/
 
 
 
