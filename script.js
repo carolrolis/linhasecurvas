@@ -1,7 +1,4 @@
-let scrollInterval;
-const homeCarousel = document.getElementById('home-carousel-div-js');
-const homeLeftArrow = document.getElementById('home-left-arrow');
-const homeRightArrow = document.getElementById('home-right-arrow');
+
 
 
 let button = document.getElementById("scroll-top");
@@ -83,42 +80,19 @@ const imgArrays = {
 
 
 
-
-
 // ========== HOME - CAROUSEL ==========
-homeLeftArrow.addEventListener('mouseover', () => startScrolling(-1));
-homeRightArrow.addEventListener('mouseover', () => startScrolling(1));
-homeLeftArrow.addEventListener('mouseout', stopScrolling);
-homeRightArrow.addEventListener('mouseout', stopScrolling);
+const homeLeftArrow = document.getElementById('home-left-arrow');
+const homeRightArrow = document.getElementById('home-right-arrow');
+const homeCarousel = document.getElementById('home-carousel-div-js');
+const homeInnerCarousel = document.getElementById('carousel-home');
+const homeCarouselImgs = Array.from(homeInnerCarousel.children);
 
-function startScrolling(direction) {
-  scrollInterval = setInterval(() => { homeCarousel.scrollLeft += direction * 500; }, 800);
-  homeLeftArrow.style.display = "block";
-}
-
-function stopScrolling() {
-  clearInterval(scrollInterval);
-}
+homeCarouselImgs.forEach(img => {
+  const duplicatedImg = img.cloneNode(true);
+  homeInnerCarousel.appendChild(duplicatedImg);
+  homeInnerCarousel.style.animation = "move 100s linear infinite";
+})
 // ========== HOME - CAROUSEL ==========
-
-
-
-// ========== SCROLL TO TOP BUTTON ==========
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    button.style.display = "block";
-  } else {
-    button.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-// ========== SCROLL TO TOP BUTTON ==========
 
 
 
@@ -282,3 +256,22 @@ function prevImage2() {
   }
 }
 // ========== CHANGE IMAGES - CATALOGO ITEM SECTIONS ========== //
+
+
+
+// ========== SCROLL TO TOP BUTTON ==========
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+// ========== SCROLL TO TOP BUTTON ==========

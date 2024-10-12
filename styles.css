@@ -224,35 +224,29 @@ nav {
   margin-bottom: 40px;
 }
 
+#home-carousel-div-js {
+  max-width: 1320px;
+  width: 100%;
+}
+
 #carousel-home {
-  display: inline-flex;
+  width: max-content;
+  display: flex;
+  gap: 30px;
 }
 
 .carousel-img-home {
-  margin: 0 15px 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-#home-left-arrow,
-#home-right-arrow {
-  overflow: hidden;
-  position: absolute;
-  opacity: 70%;
-  top: 60%;
-  transform: translateY(-50%);
-}
-
-#home-left-arrow {
-  display: none;
-  left: 10px;
-}
-
-#home-right-arrow {
-  right: 10px;
-}
-
-#home-left-arrow:hover,
-#home-right-arrow:hover {
-  opacity: 100%;
+@keyframes move {
+  to {
+    transform: translate(calc(-50% - 1.5em));
+  }
 }
 
 /********** HOME - PREVIEW SECTION **********/
@@ -506,6 +500,7 @@ footer h1 {
 .contact-link:hover {
   cursor: pointer;
   background-color: var(--color1);
+
   #path1whats,
   #path2whats,
   #path3whats,
@@ -513,7 +508,8 @@ footer h1 {
   #path2insta,
   #path3insta,
   #Icon-Setmail,
-  #tspan1whats, #tspan1insta {
+  #tspan1whats,
+  #tspan1insta {
     fill: white;
   }
 }
@@ -556,7 +552,7 @@ footer h1 {
   outline: none;
   cursor: pointer;
   border-radius: 50%;
-  padding:5px 5px 2px;
+  padding: 5px 5px 2px;
   background-color: #f3f3f3aa;
 }
 
