@@ -388,7 +388,7 @@ nav {
   margin-bottom: 15px;
 }
 
-.catalogo-carousel {
+.catalogo-carousel, .catalogo-carousel-2 {
   position: relative;
   width: 400px;
   display: flex;
@@ -430,20 +430,21 @@ nav {
   opacity: 100%;
 }
 
-
 .catalogo-left-arrow-2,
 .catalogo-right-arrow-2 {
   position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
   opacity: 70%;
+  cursor: pointer;
 }
 
 .catalogo-left-arrow-2 {
-  right: 5%;
-  margin-right: 45%;
+  left: 0;
 }
 
 .catalogo-right-arrow-2 {
-  right: 5%;
+  right: 0;
 }
 
 .catalogo-left-arrow-2:hover,

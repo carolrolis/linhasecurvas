@@ -59,6 +59,28 @@ const organizadoresImgs =
     'images/organizadores/organizador4.png',
     'images/organizadores/portafraldas.png'
   ]
+const trocadoresImgs =
+  [
+    'images/trocadores/trocador1.png',
+    'images/trocadores/trocador2.png',
+    'images/trocadores/trocador3.png',
+    'images/trocadores/trocador4.png',
+    'images/trocadores/trocador5.png',
+    'images/trocadores/trocador6.png',
+  ]
+const trocadores2Imgs =
+  [
+    'images/trocadores/trocadorportatil1.png',
+    'images/trocadores/trocadorportatil2.png',
+    'images/trocadores/trocadorportatil3.png',
+    'images/trocadores/trocadorportatil4.png',
+    'images/trocadores/trocadorportatil5.png',
+    'images/trocadores/trocadorportatil6.png',
+    'images/trocadores/trocadorportatil7.png',
+    'images/trocadores/trocadorportatil8.png',
+    'images/trocadores/trocadorportatil9.png',
+    'images/trocadores/trocadorportatil10.png',
+  ]
 const ninhoImgs =
   [
     'images/ninho/ninho1.png',
@@ -75,6 +97,8 @@ const imgArrays = {
   berco: bercoImgs,
   berco2: berco2Imgs,
   organizadores: organizadoresImgs,
+  trocadores: trocadoresImgs,
+  trocadores2: trocadores2Imgs,
   ninho: ninhoImgs,
 };
 
@@ -229,6 +253,7 @@ function prevImage() {
     changeImageCarousel();
   }
 }
+
 
 function secondCarousel() {
   if (currentArray2 && itemMainImg2) {
