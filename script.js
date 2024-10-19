@@ -91,6 +91,16 @@ const ninhoImgs =
     'images/ninho/ninho6.png',
     'images/ninho/ninho7.png'
   ]
+const calcinhasImgs = 
+  [
+    'images/calcinhas/calcinha1.png',
+    'images/calcinhas/calcinha2.png',
+    'images/calcinhas/calcinha3.png',
+    'images/calcinhas/calcinha4.png',
+    'images/calcinhas/calcinha5.png',
+    'images/calcinhas/calcinha6.png',
+    'images/calcinhas/calcinha7.png',
+  ]
 const lembrancinhasImgs =
   [
     'images/lembrancinhas/lembrancinha1.png',
@@ -124,10 +134,11 @@ const capamaquinaImgs =
 const imgArrays = {
   berco: bercoImgs,
   berco2: berco2Imgs,
-  organizadores: organizadoresImgs,
   trocadores: trocadoresImgs,
   trocadores2: trocadores2Imgs,
   ninho: ninhoImgs,
+  organizadores: organizadoresImgs,
+  calcinhas: calcinhasImgs,
   lembrancinhas: lembrancinhasImgs,
   bastidores: bastidoresImgs,
   capamaquina: capamaquinaImgs
