@@ -91,7 +91,7 @@ const ninhoImgs =
     'images/ninho/ninho6.png',
     'images/ninho/ninho7.png'
   ]
-const calcinhasImgs = 
+const calcinhasImgs =
   [
     'images/calcinhas/calcinha1.png',
     'images/calcinhas/calcinha2.png',
@@ -101,7 +101,7 @@ const calcinhasImgs =
     'images/calcinhas/calcinha6.png',
     'images/calcinhas/calcinha7.png',
   ]
-  const almofadasImgs =
+const almofadasImgs =
   [
     'images/almofadas/almofada1.png',
     'images/almofadas/almofada2.png',
@@ -127,7 +127,7 @@ const lembrancinhasImgs =
     'images/lembrancinhas/lembrancinha4.png',
     'images/lembrancinhas/lembrancinha5.png',
   ]
-const bastidoresImgs = 
+const bastidoresImgs =
   [
     'images/bastidores/bastidor1.png',
     'images/bastidores/bastidor2.png',
@@ -136,7 +136,7 @@ const bastidoresImgs =
     'images/bastidores/bastidor5.png',
     'images/bastidores/bastidor6.png'
   ]
-const capamaquinaImgs = 
+const capamaquinaImgs =
   [
     'images/capamaquina/capamaquina1.png',
     'images/capamaquina/capamaquina2.png',
