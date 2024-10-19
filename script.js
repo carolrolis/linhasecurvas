@@ -101,6 +101,24 @@ const calcinhasImgs =
     'images/calcinhas/calcinha6.png',
     'images/calcinhas/calcinha7.png',
   ]
+  const almofadasImgs =
+  [
+    'images/almofadas/almofada1.png',
+    'images/almofadas/almofada2.png',
+    'images/almofadas/almofada3.png',
+    'images/almofadas/almofada4.png',
+    'images/almofadas/almofada5.png',
+    'images/almofadas/almofada6.png',
+    'images/almofadas/almofada7.png'
+  ]
+const almofadas2Imgs =
+  [
+    'images/almofadas/almofadaamamenta1.png',
+    'images/almofadas/almofadaamamenta2.png',
+    'images/almofadas/almofadaamamenta3.png',
+    'images/almofadas/almofadaamamenta4.png',
+    'images/almofadas/almofadaamamenta5.png'
+  ]
 const lembrancinhasImgs =
   [
     'images/lembrancinhas/lembrancinha1.png',
@@ -139,6 +157,8 @@ const imgArrays = {
   ninho: ninhoImgs,
   organizadores: organizadoresImgs,
   calcinhas: calcinhasImgs,
+  almofadas: almofadasImgs,
+  almofadas2: almofadas2Imgs,
   lembrancinhas: lembrancinhasImgs,
   bastidores: bastidoresImgs,
   capamaquina: capamaquinaImgs
