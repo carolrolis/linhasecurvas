@@ -36,7 +36,20 @@ let itemMainImg;
 let itemMainImg2;
 let currentArray = [];
 let currentArray2 = [];
-let imgIndex = 0;
+const imgIndex = {
+  berco: 0,
+  berco2: 0,
+  organizadores: 0,
+  trocadores: 0,
+  trocadores2: 0,
+  ninho: 0,
+  calcinhas: 0,
+  almofadas: 0,
+  almofadas2: 0,
+  lembrancinhas: 0,
+  bastidores: 0,
+  capamaquina: 0
+}
 
 
 const bercoImgs =
@@ -292,26 +305,26 @@ function selectCatalogoItem(link) {
 // ========== CHANGE IMAGES - CATALOGO ITEM SECTIONS ========== //
 function changeImageCarousel() {
   if (currentArray && itemMainImg) {
-    itemMainImg.setAttribute("src", currentArray[imgIndex]);
+    itemMainImg.setAttribute("src", currentArray[imgIndex[changeImageValue]]);
   }
 }
 
 function nextImage() {
-  if (imgIndex < currentArray.length - 1) {
-    imgIndex++;
+  if (imgIndex[changeImageValue] < currentArray.length - 1) {
+    imgIndex[changeImageValue]++;
     changeImageCarousel();
-  } else if (imgIndex == currentArray.length - 1) {
-    imgIndex = 0;
+  } else if (imgIndex[changeImageValue] == currentArray.length - 1) {
+    imgIndex[changeImageValue] = 0;
     changeImageCarousel();
   }
 }
 
 function prevImage() {
-  if (imgIndex > 0) {
-    imgIndex--;
+  if (imgIndex[changeImageValue] > 0) {
+    imgIndex[changeImageValue]--;
     changeImageCarousel();
-  } else if (imgIndex == 0) {
-    imgIndex = currentArray.length - 1;
+  } else if (imgIndex[changeImageValue] == 0) {
+    imgIndex[changeImageValue] = currentArray.length - 1;
     changeImageCarousel();
   }
 }
@@ -319,26 +332,26 @@ function prevImage() {
 
 function secondCarousel() {
   if (currentArray2 && itemMainImg2) {
-    itemMainImg2.setAttribute("src", currentArray2[imgIndex]);
+    itemMainImg2.setAttribute("src", currentArray2[imgIndex[changeImageValue2]]);
   }
 }
 
 function nextImage2() {
-  if (imgIndex < currentArray2.length - 1) {
-    imgIndex++;
+  if (imgIndex[changeImageValue2] < currentArray2.length - 1) {
+    imgIndex[changeImageValue2]++;
     secondCarousel();
-  } else if (imgIndex == currentArray2.length - 1) {
-    imgIndex = 0;
+  } else if (imgIndex[changeImageValue2] == currentArray2.length - 1) {
+    imgIndex[changeImageValue2] = 0;
     secondCarousel();
   }
 }
 
 function prevImage2() {
-  if (imgIndex > 0) {
-    imgIndex--;
+  if (imgIndex[changeImageValue2] > 0) {
+    imgIndex[changeImageValue2]--;
     secondCarousel();
-  } else if (imgIndex == 0) {
-    imgIndex = currentArray2.length - 1;
+  } else if (imgIndex[changeImageValue2] == 0) {
+    imgIndex[changeImageValue2] = currentArray2.length - 1;
     secondCarousel();
   }
 }
