@@ -91,6 +91,14 @@ const ninhoImgs =
     'images/ninho/ninho6.png',
     'images/ninho/ninho7.png'
   ]
+const lembrancinhasImgs =
+  [
+    'images/lembrancinhas/lembrancinha1.png',
+    'images/lembrancinhas/lembrancinha2.png',
+    'images/lembrancinhas/lembrancinha3.png',
+    'images/lembrancinhas/lembrancinha4.png',
+    'images/lembrancinhas/lembrancinha5.png',
+  ]
 
 
 const imgArrays = {
@@ -100,6 +108,7 @@ const imgArrays = {
   trocadores: trocadoresImgs,
   trocadores2: trocadores2Imgs,
   ninho: ninhoImgs,
+  lembrancinhas: lembrancinhasImgs
 };
 
 

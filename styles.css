@@ -341,6 +341,7 @@ nav {
 
 #back-button-catalogo:hover {
   opacity: 100%;
+  cursor: pointer;
 }
 
 /********** CATALOGO - INTRO SECTION **********/
