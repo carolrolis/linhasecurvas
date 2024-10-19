@@ -99,6 +99,14 @@ const lembrancinhasImgs =
     'images/lembrancinhas/lembrancinha4.png',
     'images/lembrancinhas/lembrancinha5.png',
   ]
+const bastidoresImgs = 
+  [
+    'images/bastidores/bastidor1.png',
+    'images/bastidores/bastidor2.png',
+    'images/bastidores/bastidor3.png',
+    'images/bastidores/bastidor4.png',
+    'images/bastidores/bastidor5.png',
+  ]
 
 
 const imgArrays = {
@@ -108,7 +116,8 @@ const imgArrays = {
   trocadores: trocadoresImgs,
   trocadores2: trocadores2Imgs,
   ninho: ninhoImgs,
-  lembrancinhas: lembrancinhasImgs
+  lembrancinhas: lembrancinhasImgs,
+  bastidores: bastidoresImgs
 };
 
 
