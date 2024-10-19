@@ -106,6 +106,7 @@ const bastidoresImgs =
     'images/bastidores/bastidor3.png',
     'images/bastidores/bastidor4.png',
     'images/bastidores/bastidor5.png',
+    'images/bastidores/bastidor6.png'
   ]
 const capamaquinaImgs = 
   [
