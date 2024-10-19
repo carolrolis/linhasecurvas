@@ -107,7 +107,18 @@ const bastidoresImgs =
     'images/bastidores/bastidor4.png',
     'images/bastidores/bastidor5.png',
   ]
-
+const capamaquinaImgs = 
+  [
+    'images/capamaquina/capamaquina1.png',
+    'images/capamaquina/capamaquina2.png',
+    'images/capamaquina/capamaquina3.png',
+    'images/capamaquina/capamaquina4.png',
+    'images/capamaquina/capamaquina5.png',
+    'images/capamaquina/capamaquina6.png',
+    'images/capamaquina/capamaquina7.png',
+    'images/capamaquina/capamaquina8.png',
+    'images/capamaquina/capamaquina9.png',
+  ]
 
 const imgArrays = {
   berco: bercoImgs,
@@ -117,7 +128,8 @@ const imgArrays = {
   trocadores2: trocadores2Imgs,
   ninho: ninhoImgs,
   lembrancinhas: lembrancinhasImgs,
-  bastidores: bastidoresImgs
+  bastidores: bastidoresImgs,
+  capamaquina: capamaquinaImgs
 };
 
 
