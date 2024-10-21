@@ -363,7 +363,8 @@ nav {
 }
 
 .catalogo-item-conteudo,
-.catalogo-item-conteudo-2 {
+.catalogo-item-conteudo-2,
+.catalogo-item-conteudo-3 {
   display: flex;
   justify-content: space-between;
   padding: 0 100px 0;
@@ -371,25 +372,30 @@ nav {
 }
 
 .catalogo-item-texto,
-.catalogo-item-texto-2 {
+.catalogo-item-texto-2,
+.catalogo-item-texto-3 {
   max-width: 50%;
 }
 
 .catalogo-item-texto h2,
-.catalogo-item-texto-2 h2 {
+.catalogo-item-texto-2 h2,
+.catalogo-item-texto-3 h2 {
   font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 15px;
 }
 
 .catalogo-item-texto p,
-.catalogo-item-texto-2 p {
+.catalogo-item-texto-2 p,
+.catalogo-item-texto-3 p {
   font-size: 1.2rem;
   font-weight: normal;
   margin-bottom: 15px;
 }
 
-.catalogo-carousel, .catalogo-carousel-2 {
+.catalogo-carousel,
+.catalogo-carousel-2,
+.catalogo-carousel-3 {
   position: relative;
   width: 400px;
   display: flex;
@@ -398,7 +404,8 @@ nav {
 }
 
 .catalogo-img-carousel,
-.catalogo-img-carousel-2 {
+.catalogo-img-carousel-2,
+.catalogo-img-carousel-3 {
   max-width: 400px;
   height: 400px;
   object-fit: contain;
@@ -410,7 +417,11 @@ nav {
 }
 
 .catalogo-left-arrow,
-.catalogo-right-arrow {
+.catalogo-right-arrow,
+.catalogo-left-arrow-2,
+.catalogo-right-arrow-2,
+.catalogo-left-arrow-3,
+.catalogo-right-arrow-3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -418,38 +429,24 @@ nav {
   cursor: pointer;
 }
 
-.catalogo-left-arrow {
+.catalogo-left-arrow,
+.catalogo-left-arrow-2,
+.catalogo-left-arrow-3 {
   left: 0;
 }
 
-.catalogo-right-arrow {
+.catalogo-right-arrow,
+.catalogo-right-arrow-2,
+.catalogo-right-arrow-3 {
   right: 0;
 }
 
 .catalogo-left-arrow:hover,
-.catalogo-right-arrow:hover {
-  opacity: 100%;
-}
-
-.catalogo-left-arrow-2,
-.catalogo-right-arrow-2 {
-  position: absolute;
-  top: 50%;
-  transform:translateY(-50%);
-  opacity: 70%;
-  cursor: pointer;
-}
-
-.catalogo-left-arrow-2 {
-  left: 0;
-}
-
-.catalogo-right-arrow-2 {
-  right: 0;
-}
-
+.catalogo-right-arrow:hover,
 .catalogo-left-arrow-2:hover,
-.catalogo-right-arrow-2:hover {
+.catalogo-right-arrow-2:hover,
+.catalogo-left-arrow-3:hover,
+.catalogo-right-arrow-3:hover {
   opacity: 100%;
 }
 

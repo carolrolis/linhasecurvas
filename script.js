@@ -39,6 +39,9 @@ let currentArray2 = [];
 const imgIndex = {
   berco: 0,
   berco2: 0,
+  toalhas: 0,
+  toalhas2: 0,
+  toalhas3: 0,
   organizadores: 0,
   trocadores: 0,
   trocadores2: 0,
@@ -63,6 +66,41 @@ const berco2Imgs =
   [
     'images/berco/rolo1.png',
     'images/berco/rolo2.png'
+  ]
+const toalhasImgs =
+  [
+    'images/toalhas/toalha1.png',
+    'images/toalhas/toalha2.png',
+    'images/toalhas/toalha3.png',
+    'images/toalhas/toalha4.png',
+    'images/toalhas/toalha5.png',
+    'images/toalhas/toalha6.png',
+    'images/toalhas/toalha7.png',
+    'images/toalhas/toalha8.png',
+    'images/toalhas/toalha9.png',
+    'images/toalhas/toalha10.png',
+    'images/toalhas/toalha11.png',
+    'images/toalhas/toalha12.png',
+    'images/toalhas/toalha13.png'
+  ]
+const toalhas2Imgs =
+  [
+    'images/toalhas/roupao1.png',
+    'images/toalhas/roupao2.png',
+    'images/toalhas/roupao3.png',
+    'images/toalhas/roupao4.png',
+    'images/toalhas/roupao5.png',
+    'images/toalhas/roupao6.png',
+    'images/toalhas/roupao7.png'
+  ]
+const toalhas3Imgs =
+  [
+    'images/toalhas/toalhaadulto1.png',
+    'images/toalhas/toalhaadulto2.png',
+    'images/toalhas/toalhaadulto3.png',
+    'images/toalhas/toalhaadulto4.png',
+    'images/toalhas/toalhaadulto5.png',
+    'images/toalhas/toalhaadulto6.png',
   ]
 const organizadoresImgs =
   [
@@ -165,6 +203,9 @@ const capamaquinaImgs =
 const imgArrays = {
   berco: bercoImgs,
   berco2: berco2Imgs,
+  toalhas: toalhasImgs,
+  toalhas2: toalhas2Imgs,
+  toalhas3: toalhas3Imgs,
   trocadores: trocadoresImgs,
   trocadores2: trocadores2Imgs,
   ninho: ninhoImgs,
