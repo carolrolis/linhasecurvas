@@ -43,9 +43,13 @@ let currentArray3 = [];
 const imgIndex = {
   berco: 0,
   berco2: 0,
+  bolsas: 0,
+  bolsas2: 0,
+  bolsas3: 0,
   toalhas: 0,
   toalhas2: 0,
   toalhas3: 0,
+  portadocumentos: 0,
   organizadores: 0,
   trocadores: 0,
   trocadores2: 0,
@@ -72,6 +76,40 @@ const berco2Imgs =
   [
     'images/berco/rolo1.png',
     'images/berco/rolo2.png'
+  ]
+const bolsasImgs =
+  [
+    'images/bolsas/bolsa1.png',
+    'images/bolsas/bolsa2.png',
+    'images/bolsas/bolsa3.png',
+    'images/bolsas/bolsa4.png',
+    'images/bolsas/bolsa5.png',
+    'images/bolsas/bolsa6.png',
+  ]
+const bolsas2Imgs =
+  [
+    'images/bolsas/necessaire1.png',
+    'images/bolsas/necessaire2.png',
+    'images/bolsas/necessaire3.png',
+    'images/bolsas/necessaire4.png',
+    'images/bolsas/necessaire5.png',
+    'images/bolsas/necessaire6.png',
+    'images/bolsas/necessaire7.png',
+    'images/bolsas/necessaire8.png',
+    'images/bolsas/necessaire9.png',
+    'images/bolsas/necessaire10.png',
+  ]
+const bolsas3Imgs =
+  [
+    'images/bolsas/farmacinha1.png',
+    'images/bolsas/farmacinha2.png',
+    'images/bolsas/farmacinha3.png',
+    'images/bolsas/farmacinha4.png',
+    'images/bolsas/farmacinha5.png',
+    'images/bolsas/farmacinha6.png',
+    'images/bolsas/farmacinha7.png',
+    'images/bolsas/farmacinha8.png',
+    'images/bolsas/farmacinha9.png',
   ]
 const toalhasImgs =
   [
@@ -107,6 +145,28 @@ const toalhas3Imgs =
     'images/toalhas/toalhaadulto4.png',
     'images/toalhas/toalhaadulto5.png',
     'images/toalhas/toalhaadulto6.png',
+  ]
+const portadocumentosImgs =
+  [
+    'images/portadocumentos/porta1.png',
+    'images/portadocumentos/porta2.png',
+    'images/portadocumentos/porta3.png',
+    'images/portadocumentos/porta4.png',
+    'images/portadocumentos/porta5.png',
+    'images/portadocumentos/porta6.png',
+    'images/portadocumentos/porta7.png',
+    'images/portadocumentos/porta8.png',
+    'images/portadocumentos/porta9.png',
+    'images/portadocumentos/porta10.png',
+    'images/portadocumentos/porta11.png',
+    'images/portadocumentos/porta12.png',
+    'images/portadocumentos/porta13.png',
+    'images/portadocumentos/porta14.png',
+    'images/portadocumentos/porta15.png',
+    'images/portadocumentos/porta16.png',
+    'images/portadocumentos/porta17.png',
+    'images/portadocumentos/porta18.png',
+    'images/portadocumentos/porta19.png',
   ]
 const organizadoresImgs =
   [
@@ -228,12 +288,16 @@ const capamaquinaImgs =
 const imgArrays = {
   berco: bercoImgs,
   berco2: berco2Imgs,
+  bolsas: bolsasImgs,
+  bolsas2: bolsas2Imgs,
+  bolsas3: bolsas3Imgs,
   toalhas: toalhasImgs,
   toalhas2: toalhas2Imgs,
   toalhas3: toalhas3Imgs,
   trocadores: trocadoresImgs,
   trocadores2: trocadores2Imgs,
   ninho: ninhoImgs,
+  portadocumentos: portadocumentosImgs,
   organizadores: organizadoresImgs,
   calcinhas: calcinhasImgs,
   almofadas: almofadasImgs,
