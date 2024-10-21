@@ -32,10 +32,14 @@ const catalogoRightArrow2 = document.querySelector('.catalogo-right-arrow-2');
 
 let changeImageValue;
 let changeImageValue2;
+let changeImageValue3;
 let itemMainImg;
 let itemMainImg2;
+let itemMainImg3;
 let currentArray = [];
 let currentArray2 = [];
+let currentArray3 = [];
+
 const imgIndex = {
   berco: 0,
   berco2: 0,
@@ -302,6 +306,7 @@ itemsLinks.forEach(link => {
     selectCatalogoItem(link);
     changeImageCarousel();
     secondCarousel();
+    thirdCarousel();
   });
 });
 
@@ -331,6 +336,10 @@ function selectCatalogoItem(link) {
   itemMainImg2 = document.getElementById(`catalogo-img-${changeImageValue}2`);
   currentArray2 = imgArrays[changeImageValue2];
 
+  changeImageValue3 = hrefNew.replace("-item", "3");
+  itemMainImg3 = document.getElementById(`catalogo-img-${changeImageValue}3`);
+  currentArray3 = imgArrays[changeImageValue3];
+
   console.log('changeImageValue:', changeImageValue);
   console.log('currentArray:', currentArray);
   console.log('itemMainImg:', itemMainImg);
@@ -338,6 +347,10 @@ function selectCatalogoItem(link) {
   console.log('changeImageValue2:', changeImageValue2);
   console.log('currentArray2:', currentArray2);
   console.log('itemMainImg2:', itemMainImg2);
+
+  console.log('changeImageValue3:', changeImageValue3);
+  console.log('currentArray3:', currentArray3);
+  console.log('itemMainImg3:', itemMainImg3);
 }
 // ========== CHANGE PAGES - CATALOGO ITEM SECTIONS ========== //
 
@@ -394,6 +407,33 @@ function prevImage2() {
   } else if (imgIndex[changeImageValue2] == 0) {
     imgIndex[changeImageValue2] = currentArray2.length - 1;
     secondCarousel();
+  }
+}
+
+
+function thirdCarousel() {
+  if (currentArray3 && itemMainImg3) {
+    itemMainImg3.setAttribute("src", currentArray3[imgIndex[changeImageValue3]]);
+  }
+}
+
+function nextImage3() {
+  if (imgIndex[changeImageValue3] < currentArray3.length - 1) {
+    imgIndex[changeImageValue3]++;
+    thirdCarousel();
+  } else if (imgIndex[changeImageValue3] == currentArray3.length - 1) {
+    imgIndex[changeImageValue3] = 0;
+    thirdCarousel();
+  }
+}
+
+function prevImage3() {
+  if (imgIndex[changeImageValue3] > 0) {
+    imgIndex[changeImageValue3]--;
+    thirdCarousel();
+  } else if (imgIndex[changeImageValue3] == 0) {
+    imgIndex[changeImageValue3] = currentArray3.length - 1;
+    thirdCarousel();
   }
 }
 // ========== CHANGE IMAGES - CATALOGO ITEM SECTIONS ========== //
