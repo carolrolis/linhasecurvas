@@ -53,6 +53,8 @@ const imgIndex = {
   calcinhas: 0,
   almofadas: 0,
   almofadas2: 0,
+  bonecas: 0,
+  bonecas2: 0,
   lembrancinhas: 0,
   bastidores: 0,
   capamaquina: 0
@@ -174,6 +176,25 @@ const almofadas2Imgs =
     'images/almofadas/almofadaamamenta4.png',
     'images/almofadas/almofadaamamenta5.png'
   ]
+const bonecasImgs =
+  [
+    'images/bonecas/boneca1.png',
+    'images/bonecas/boneca2.png',
+    'images/bonecas/boneca3.png',
+    'images/bonecas/boneca4.png',
+    'images/bonecas/boneca5.png',
+    'images/bonecas/boneca6.png',
+    'images/bonecas/boneca7.png',
+    'images/bonecas/boneca8.png',
+    'images/bonecas/boneca9.png'
+  ]
+const bonecas2Imgs =
+  [
+    'images/bonecas/naninha1.png',
+    'images/bonecas/naninha2.png',
+    'images/bonecas/naninha3.png',
+    'images/bonecas/naninha4.png'
+  ]
 const lembrancinhasImgs =
   [
     'images/lembrancinhas/lembrancinha1.png',
@@ -217,6 +238,8 @@ const imgArrays = {
   calcinhas: calcinhasImgs,
   almofadas: almofadasImgs,
   almofadas2: almofadas2Imgs,
+  bonecas: bonecasImgs,
+  bonecas2: bonecas2Imgs,
   lembrancinhas: lembrancinhasImgs,
   bastidores: bastidoresImgs,
   capamaquina: capamaquinaImgs
