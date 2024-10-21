@@ -55,6 +55,7 @@ const imgIndex = {
   trocadores2: 0,
   ninho: 0,
   calcinhas: 0,
+  kitbatismo: 0,
   almofadas: 0,
   almofadas2: 0,
   bonecas: 0,
@@ -218,6 +219,20 @@ const calcinhasImgs =
     'images/calcinhas/calcinha6.png',
     'images/calcinhas/calcinha7.png',
   ]
+const kitbatismoImgs =
+  [
+    'images/kitbatismo/kitbatismo1.png',
+    'images/kitbatismo/kitbatismo2.png',
+    'images/kitbatismo/kitbatismo3.png',
+    'images/kitbatismo/kitbatismo4.png',
+    'images/kitbatismo/kitbatismo5.png',
+    'images/kitbatismo/kitbatismo6.png',
+    'images/kitbatismo/kitbatismo7.png',
+    'images/kitbatismo/kitbatismo8.png',
+    'images/kitbatismo/kitbatismo9.png',
+    'images/kitbatismo/kitbatismo10.png',
+    'images/kitbatismo/kitbatismo11.png',
+  ]
 const almofadasImgs =
   [
     'images/almofadas/almofada1.png',
@@ -300,6 +315,7 @@ const imgArrays = {
   portadocumentos: portadocumentosImgs,
   organizadores: organizadoresImgs,
   calcinhas: calcinhasImgs,
+  kitbatismo: kitbatismoImgs,
   almofadas: almofadasImgs,
   almofadas2: almofadas2Imgs,
   bonecas: bonecasImgs,
