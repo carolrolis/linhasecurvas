@@ -46,6 +46,7 @@ const imgIndex = {
   bolsas: 0,
   bolsas2: 0,
   bolsas3: 0,
+  fraldas: 0,
   toalhas: 0,
   toalhas2: 0,
   toalhas3: 0,
@@ -112,6 +113,24 @@ const bolsas3Imgs =
     'images/bolsas/farmacinha7.png',
     'images/bolsas/farmacinha8.png',
     'images/bolsas/farmacinha9.png'
+  ]
+const fraldasImgs =
+  [
+    'images/fraldas/fralda1.png',
+    'images/fraldas/fralda2.png',
+    'images/fraldas/fralda3.png',
+    'images/fraldas/fralda4.png',
+    'images/fraldas/fralda5.png',
+    'images/fraldas/fralda6.png',
+    'images/fraldas/fralda7.png',
+    'images/fraldas/fralda8.png',
+    'images/fraldas/fralda9.png',
+    'images/fraldas/fralda10.png',
+    'images/fraldas/fralda11.png',
+    'images/fraldas/fralda12.png',
+    'images/fraldas/fralda13.png',
+    'images/fraldas/fralda14.png',
+    'images/fraldas/fralda15.png',
   ]
 const toalhasImgs =
   [
@@ -317,6 +336,7 @@ const imgArrays = {
   bolsas: bolsasImgs,
   bolsas2: bolsas2Imgs,
   bolsas3: bolsas3Imgs,
+  fraldas: fraldasImgs,
   toalhas: toalhasImgs,
   toalhas2: toalhas2Imgs,
   toalhas3: toalhas3Imgs,
