@@ -49,6 +49,7 @@ const imgIndex = {
   toalhas: 0,
   toalhas2: 0,
   toalhas3: 0,
+  kitmaternidade: 0,
   portadocumentos: 0,
   organizadores: 0,
   trocadores: 0,
@@ -71,7 +72,7 @@ const bercoImgs =
     'images/berco/berco1.png',
     'images/berco/berco2.png',
     'images/berco/berco3.png',
-    'images/berco/berco4.png',
+    'images/berco/berco4.png'
   ]
 const berco2Imgs =
   [
@@ -85,7 +86,7 @@ const bolsasImgs =
     'images/bolsas/bolsa3.png',
     'images/bolsas/bolsa4.png',
     'images/bolsas/bolsa5.png',
-    'images/bolsas/bolsa6.png',
+    'images/bolsas/bolsa6.png'
   ]
 const bolsas2Imgs =
   [
@@ -98,7 +99,7 @@ const bolsas2Imgs =
     'images/bolsas/necessaire7.png',
     'images/bolsas/necessaire8.png',
     'images/bolsas/necessaire9.png',
-    'images/bolsas/necessaire10.png',
+    'images/bolsas/necessaire10.png'
   ]
 const bolsas3Imgs =
   [
@@ -110,7 +111,7 @@ const bolsas3Imgs =
     'images/bolsas/farmacinha6.png',
     'images/bolsas/farmacinha7.png',
     'images/bolsas/farmacinha8.png',
-    'images/bolsas/farmacinha9.png',
+    'images/bolsas/farmacinha9.png'
   ]
 const toalhasImgs =
   [
@@ -145,7 +146,17 @@ const toalhas3Imgs =
     'images/toalhas/toalhaadulto3.png',
     'images/toalhas/toalhaadulto4.png',
     'images/toalhas/toalhaadulto5.png',
-    'images/toalhas/toalhaadulto6.png',
+    'images/toalhas/toalhaadulto6.png'
+  ]
+const kitmaternidadeImgs =
+  [
+    'images/kitmaternidade/kitmaternidade1.png',
+    'images/kitmaternidade/kitmaternidade2.png',
+    'images/kitmaternidade/kitmaternidade3.png',
+    'images/kitmaternidade/kitmaternidade4.png',
+    'images/kitmaternidade/kitmaternidade5.png',
+    'images/kitmaternidade/kitmaternidade6.png',
+    'images/kitmaternidade/kitmaternidade7.png'
   ]
 const portadocumentosImgs =
   [
@@ -167,7 +178,7 @@ const portadocumentosImgs =
     'images/portadocumentos/porta16.png',
     'images/portadocumentos/porta17.png',
     'images/portadocumentos/porta18.png',
-    'images/portadocumentos/porta19.png',
+    'images/portadocumentos/porta19.png'
   ]
 const organizadoresImgs =
   [
@@ -184,7 +195,7 @@ const trocadoresImgs =
     'images/trocadores/trocador3.png',
     'images/trocadores/trocador4.png',
     'images/trocadores/trocador5.png',
-    'images/trocadores/trocador6.png',
+    'images/trocadores/trocador6.png'
   ]
 const trocadores2Imgs =
   [
@@ -197,7 +208,7 @@ const trocadores2Imgs =
     'images/trocadores/trocadorportatil7.png',
     'images/trocadores/trocadorportatil8.png',
     'images/trocadores/trocadorportatil9.png',
-    'images/trocadores/trocadorportatil10.png',
+    'images/trocadores/trocadorportatil10.png'
   ]
 const ninhoImgs =
   [
@@ -217,7 +228,7 @@ const calcinhasImgs =
     'images/calcinhas/calcinha4.png',
     'images/calcinhas/calcinha5.png',
     'images/calcinhas/calcinha6.png',
-    'images/calcinhas/calcinha7.png',
+    'images/calcinhas/calcinha7.png'
   ]
 const kitbatismoImgs =
   [
@@ -231,7 +242,7 @@ const kitbatismoImgs =
     'images/kitbatismo/kitbatismo8.png',
     'images/kitbatismo/kitbatismo9.png',
     'images/kitbatismo/kitbatismo10.png',
-    'images/kitbatismo/kitbatismo11.png',
+    'images/kitbatismo/kitbatismo11.png'
   ]
 const almofadasImgs =
   [
@@ -297,7 +308,7 @@ const capamaquinaImgs =
     'images/capamaquina/capamaquina6.png',
     'images/capamaquina/capamaquina7.png',
     'images/capamaquina/capamaquina8.png',
-    'images/capamaquina/capamaquina9.png',
+    'images/capamaquina/capamaquina9.png'
   ]
 
 const imgArrays = {
@@ -309,6 +320,7 @@ const imgArrays = {
   toalhas: toalhasImgs,
   toalhas2: toalhas2Imgs,
   toalhas3: toalhas3Imgs,
+  kitmaternidade: kitmaternidadeImgs,
   trocadores: trocadoresImgs,
   trocadores2: trocadores2Imgs,
   ninho: ninhoImgs,
