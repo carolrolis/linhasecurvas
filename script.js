@@ -33,12 +33,17 @@ const catalogoRightArrow2 = document.querySelector('.catalogo-right-arrow-2');
 let changeImageValue;
 let changeImageValue2;
 let changeImageValue3;
+let changeImageValue4;
+
 let itemMainImg;
 let itemMainImg2;
 let itemMainImg3;
+let itemMainImg4;
+
 let currentArray = [];
 let currentArray2 = [];
 let currentArray3 = [];
+let currentArray4 = [];
 
 const imgIndex = {
   berco: 0,
@@ -64,7 +69,11 @@ const imgIndex = {
   bonecas2: 0,
   lembrancinhas: 0,
   bastidores: 0,
-  capamaquina: 0
+  capamaquina: 0,
+  cozinha: 0,
+  cozinha2: 0,
+  cozinha3: 0,
+  cozinha4: 0
 }
 
 
@@ -130,7 +139,7 @@ const fraldasImgs =
     'images/fraldas/fralda12.png',
     'images/fraldas/fralda13.png',
     'images/fraldas/fralda14.png',
-    'images/fraldas/fralda15.png',
+    'images/fraldas/fralda15.png'
   ]
 const toalhasImgs =
   [
@@ -306,7 +315,7 @@ const lembrancinhasImgs =
     'images/lembrancinhas/lembrancinha2.png',
     'images/lembrancinhas/lembrancinha3.png',
     'images/lembrancinhas/lembrancinha4.png',
-    'images/lembrancinhas/lembrancinha5.png',
+    'images/lembrancinhas/lembrancinha5.png'
   ]
 const bastidoresImgs =
   [
@@ -329,7 +338,52 @@ const capamaquinaImgs =
     'images/capamaquina/capamaquina8.png',
     'images/capamaquina/capamaquina9.png'
   ]
-
+const cozinhaImgs =
+  [
+    'images/cozinha/cozinha1.png',
+    'images/cozinha/cozinha2.png',
+    'images/cozinha/cozinha3.png',
+    'images/cozinha/cozinha4.png',
+    'images/cozinha/cozinha5.png',
+    'images/cozinha/cozinha6.png',
+    'images/cozinha/cozinha7.png',
+    'images/cozinha/cozinha8.png',
+    'images/cozinha/cozinha9.png',
+    'images/cozinha/cozinha10.png',
+    'images/cozinha/cozinha11.png',
+    'images/cozinha/cozinha12.png',
+    'images/cozinha/cozinha13.png',
+    'images/cozinha/cozinha14.png',
+    'images/cozinha/cozinha15.png'
+  ]
+const cozinha2Imgs =
+  [
+    'images/cozinha/pano1.png',
+    'images/cozinha/pano2.png',
+    'images/cozinha/pano3.png',
+    'images/cozinha/pano4.png',
+    'images/cozinha/pano5.png',
+    'images/cozinha/pano6.png',
+    'images/cozinha/pano7.png',
+    'images/cozinha/pano8.png'
+  ]
+const cozinha3Imgs =
+  [
+    'images/cozinha/puxasaco1.png',
+    'images/cozinha/puxasaco2.png',
+    'images/cozinha/puxasaco3.png',
+    'images/cozinha/puxasaco4.png',
+    'images/cozinha/puxasaco5.png',
+    'images/cozinha/puxasaco6.png',
+    'images/cozinha/puxasaco7.png'
+  ]
+const cozinha4Imgs =
+  [
+    'images/cozinha/trilho1.png',
+    'images/cozinha/trilho2.png',
+    'images/cozinha/trilho3.png',
+    'images/cozinha/trilho4.png'
+  ]
 const imgArrays = {
   berco: bercoImgs,
   berco2: berco2Imgs,
@@ -354,7 +408,11 @@ const imgArrays = {
   bonecas2: bonecas2Imgs,
   lembrancinhas: lembrancinhasImgs,
   bastidores: bastidoresImgs,
-  capamaquina: capamaquinaImgs
+  capamaquina: capamaquinaImgs,
+  cozinha: cozinhaImgs,
+  cozinha2: cozinha2Imgs,
+  cozinha3: cozinha3Imgs,
+  cozinha4: cozinha4Imgs
 };
 
 
@@ -442,6 +500,7 @@ itemsLinks.forEach(link => {
     changeImageCarousel();
     secondCarousel();
     thirdCarousel();
+    fourthCarousel();
   });
 });
 
@@ -463,6 +522,7 @@ function selectCatalogoItem(link) {
     }
   });
 
+
   changeImageValue = hrefNew.replace("-item", "");
   itemMainImg = document.getElementById(`catalogo-img-${changeImageValue}`);
   currentArray = imgArrays[changeImageValue];
@@ -475,6 +535,11 @@ function selectCatalogoItem(link) {
   itemMainImg3 = document.getElementById(`catalogo-img-${changeImageValue}3`);
   currentArray3 = imgArrays[changeImageValue3];
 
+  changeImageValue4 = hrefNew.replace("-item", "4");
+  itemMainImg4 = document.getElementById(`catalogo-img-${changeImageValue}4`);
+  currentArray4 = imgArrays[changeImageValue4];
+
+
   console.log('changeImageValue:', changeImageValue);
   console.log('currentArray:', currentArray);
   console.log('itemMainImg:', itemMainImg);
@@ -486,6 +551,10 @@ function selectCatalogoItem(link) {
   console.log('changeImageValue3:', changeImageValue3);
   console.log('currentArray3:', currentArray3);
   console.log('itemMainImg3:', itemMainImg3);
+
+  console.log('changeImageValue4:', changeImageValue4);
+  console.log('currentArray4:', currentArray4);
+  console.log('itemMainImg4:', itemMainImg4);
 }
 // ========== CHANGE PAGES - CATALOGO ITEM SECTIONS ========== //
 
@@ -569,6 +638,33 @@ function prevImage3() {
   } else if (imgIndex[changeImageValue3] == 0) {
     imgIndex[changeImageValue3] = currentArray3.length - 1;
     thirdCarousel();
+  }
+}
+
+
+function fourthCarousel() {
+  if (currentArray4 && itemMainImg4) {
+    itemMainImg4.setAttribute("src", currentArray4[imgIndex[changeImageValue4]]);
+  }
+}
+
+function nextImage4() {
+  if (imgIndex[changeImageValue4] < currentArray4.length - 1) {
+    imgIndex[changeImageValue4]++;
+    fourthCarousel();
+  } else if (imgIndex[changeImageValue4] == currentArray4.length - 1) {
+    imgIndex[changeImageValue4] = 0;
+    fourthCarousel();
+  }
+}
+
+function prevImage4() {
+  if (imgIndex[changeImageValue4] > 0) {
+    imgIndex[changeImageValue4]--;
+    fourthCarousel();
+  } else if (imgIndex[changeImageValue4] == 0) {
+    imgIndex[changeImageValue4] = currentArray4.length - 1;
+    fourthCarousel();
   }
 }
 // ========== CHANGE IMAGES - CATALOGO ITEM SECTIONS ========== //

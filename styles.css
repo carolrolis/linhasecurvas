@@ -365,16 +365,12 @@ nav {
 .catalogo-item-conteudo,
 .catalogo-item-conteudo-2,
 .catalogo-item-conteudo-3 {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 100px 0;
+  flex-wrap: wrap;
+  padding: 0 40px 0;
   margin-bottom: 130px;
-}
-
-.catalogo-item-texto,
-.catalogo-item-texto-2,
-.catalogo-item-texto-3 {
-  max-width: 50%;
 }
 
 .catalogo-item-texto h2,
