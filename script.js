@@ -34,16 +34,25 @@ let changeImageValue;
 let changeImageValue2;
 let changeImageValue3;
 let changeImageValue4;
+let changeImageValue5;
+let changeImageValue6;
+let changeImageValue7;
 
 let itemMainImg;
 let itemMainImg2;
 let itemMainImg3;
 let itemMainImg4;
+let itemMainImg5;
+let itemMainImg6;
+let itemMainImg7;
 
 let currentArray = [];
 let currentArray2 = [];
 let currentArray3 = [];
 let currentArray4 = [];
+let currentArray5 = [];
+let currentArray6 = [];
+let currentArray7 = [];
 
 const imgIndex = {
   berco: 0,
@@ -70,10 +79,13 @@ const imgIndex = {
   lembrancinhas: 0,
   bastidores: 0,
   capamaquina: 0,
-  cozinha: 0,
-  cozinha2: 0,
-  cozinha3: 0,
-  cozinha4: 0
+  lar: 0,
+  lar2: 0,
+  lar3: 0,
+  lar4: 0,
+  lar5: 0,
+  lar6: 0,
+  lar7: 0
 }
 
 
@@ -338,51 +350,70 @@ const capamaquinaImgs =
     'images/capamaquina/capamaquina8.png',
     'images/capamaquina/capamaquina9.png'
   ]
-const cozinhaImgs =
+const larImgs =
   [
-    'images/cozinha/cozinha1.png',
-    'images/cozinha/cozinha2.png',
-    'images/cozinha/cozinha3.png',
-    'images/cozinha/cozinha4.png',
-    'images/cozinha/cozinha5.png',
-    'images/cozinha/cozinha6.png',
-    'images/cozinha/cozinha7.png',
-    'images/cozinha/cozinha8.png',
-    'images/cozinha/cozinha9.png',
-    'images/cozinha/cozinha10.png',
-    'images/cozinha/cozinha11.png',
-    'images/cozinha/cozinha12.png',
-    'images/cozinha/cozinha13.png',
-    'images/cozinha/cozinha14.png',
-    'images/cozinha/cozinha15.png'
+    'images/lar/cozinha1.png',
+    'images/lar/cozinha2.png',
+    'images/lar/cozinha3.png',
+    'images/lar/cozinha4.png',
+    'images/lar/cozinha5.png',
+    'images/lar/cozinha6.png',
+    'images/lar/cozinha7.png',
+    'images/lar/cozinha8.png',
+    'images/lar/cozinha9.png',
+    'images/lar/cozinha10.png',
+    'images/lar/cozinha11.png',
+    'images/lar/cozinha12.png',
+    'images/lar/cozinha13.png',
+    'images/lar/cozinha14.png',
+    'images/lar/cozinha15.png'
   ]
-const cozinha2Imgs =
+const lar2Imgs =
   [
-    'images/cozinha/pano1.png',
-    'images/cozinha/pano2.png',
-    'images/cozinha/pano3.png',
-    'images/cozinha/pano4.png',
-    'images/cozinha/pano5.png',
-    'images/cozinha/pano6.png',
-    'images/cozinha/pano7.png',
-    'images/cozinha/pano8.png'
+    'images/lar/pano1.png',
+    'images/lar/pano2.png',
+    'images/lar/pano3.png',
+    'images/lar/pano4.png',
+    'images/lar/pano5.png',
+    'images/lar/pano6.png',
+    'images/lar/pano7.png',
+    'images/lar/pano8.png'
   ]
-const cozinha3Imgs =
+const lar3Imgs =
   [
-    'images/cozinha/puxasaco1.png',
-    'images/cozinha/puxasaco2.png',
-    'images/cozinha/puxasaco3.png',
-    'images/cozinha/puxasaco4.png',
-    'images/cozinha/puxasaco5.png',
-    'images/cozinha/puxasaco6.png',
-    'images/cozinha/puxasaco7.png'
+    'images/lar/puxasaco1.png',
+    'images/lar/puxasaco2.png',
+    'images/lar/puxasaco3.png',
+    'images/lar/puxasaco4.png',
+    'images/lar/puxasaco5.png',
+    'images/lar/puxasaco6.png',
+    'images/lar/puxasaco7.png'
   ]
-const cozinha4Imgs =
+const lar4Imgs =
   [
-    'images/cozinha/trilho1.png',
-    'images/cozinha/trilho2.png',
-    'images/cozinha/trilho3.png',
-    'images/cozinha/trilho4.png'
+    'images/lar/trilho1.png',
+    'images/lar/trilho2.png',
+    'images/lar/trilho3.png',
+    'images/lar/trilho4.png'
+  ]
+const lar5Imgs =
+  [
+    'images/lar/kitlanche1.png',
+    'images/lar/kitlanche2.png',
+    'images/lar/kitlanche3.png',
+    'images/lar/kitlanche4.png'
+  ]
+const lar6Imgs =
+  [
+    'images/lar/peso1.png',
+    'images/lar/peso2.png',
+    'images/lar/peso3.png',
+    'images/lar/peso4.png'
+  ]
+const lar7Imgs =
+  [
+    'images/lar/avental1.png',
+    'images/lar/avental2.png'
   ]
 const imgArrays = {
   berco: bercoImgs,
@@ -409,10 +440,13 @@ const imgArrays = {
   lembrancinhas: lembrancinhasImgs,
   bastidores: bastidoresImgs,
   capamaquina: capamaquinaImgs,
-  cozinha: cozinhaImgs,
-  cozinha2: cozinha2Imgs,
-  cozinha3: cozinha3Imgs,
-  cozinha4: cozinha4Imgs
+  lar: larImgs,
+  lar2: lar2Imgs,
+  lar3: lar3Imgs,
+  lar4: lar4Imgs,
+  lar5: lar5Imgs,
+  lar6: lar6Imgs,
+  lar7: lar7Imgs
 };
 
 
@@ -501,6 +535,9 @@ itemsLinks.forEach(link => {
     secondCarousel();
     thirdCarousel();
     fourthCarousel();
+    fifthCarousel();
+    sixthCarousel();
+    seventhCarousel();
   });
 });
 
@@ -539,22 +576,22 @@ function selectCatalogoItem(link) {
   itemMainImg4 = document.getElementById(`catalogo-img-${changeImageValue}4`);
   currentArray4 = imgArrays[changeImageValue4];
 
+  changeImageValue5 = hrefNew.replace("-item", "5");
+  itemMainImg5 = document.getElementById(`catalogo-img-${changeImageValue}5`);
+  currentArray5 = imgArrays[changeImageValue5];
+
+  changeImageValue6 = hrefNew.replace("-item", "6");
+  itemMainImg6 = document.getElementById(`catalogo-img-${changeImageValue}6`);
+  currentArray6 = imgArrays[changeImageValue6];
+
+  changeImageValue7 = hrefNew.replace("-item", "7");
+  itemMainImg7 = document.getElementById(`catalogo-img-${changeImageValue}7`);
+  currentArray7 = imgArrays[changeImageValue7];
+
 
   console.log('changeImageValue:', changeImageValue);
   console.log('currentArray:', currentArray);
   console.log('itemMainImg:', itemMainImg);
-
-  console.log('changeImageValue2:', changeImageValue2);
-  console.log('currentArray2:', currentArray2);
-  console.log('itemMainImg2:', itemMainImg2);
-
-  console.log('changeImageValue3:', changeImageValue3);
-  console.log('currentArray3:', currentArray3);
-  console.log('itemMainImg3:', itemMainImg3);
-
-  console.log('changeImageValue4:', changeImageValue4);
-  console.log('currentArray4:', currentArray4);
-  console.log('itemMainImg4:', itemMainImg4);
 }
 // ========== CHANGE PAGES - CATALOGO ITEM SECTIONS ========== //
 
@@ -665,6 +702,86 @@ function prevImage4() {
   } else if (imgIndex[changeImageValue4] == 0) {
     imgIndex[changeImageValue4] = currentArray4.length - 1;
     fourthCarousel();
+  }
+}
+
+function fifthCarousel() {
+  if (currentArray5 && itemMainImg5) {
+    itemMainImg5.setAttribute("src", currentArray5[imgIndex[changeImageValue5]]);
+  }
+}
+
+function nextImage5() {
+  if (imgIndex[changeImageValue5] < currentArray5.length - 1) {
+    imgIndex[changeImageValue5]++;
+    fifthCarousel();
+  } else if (imgIndex[changeImageValue5] == currentArray5.length - 1) {
+    imgIndex[changeImageValue5] = 0;
+    fifthCarousel();
+  }
+}
+
+function prevImage5() {
+  if (imgIndex[changeImageValue5] > 0) {
+    imgIndex[changeImageValue5]--;
+    fifthCarousel();
+  } else if (imgIndex[changeImageValue5] == 0) {
+    imgIndex[changeImageValue5] = currentArray5.length - 1;
+    fifthCarousel();
+  }
+}
+
+
+function sixthCarousel() {
+  if (currentArray6 && itemMainImg6) {
+    itemMainImg6.setAttribute("src", currentArray6[imgIndex[changeImageValue6]]);
+  }
+}
+
+function nextImage6() {
+  if (imgIndex[changeImageValue6] < currentArray6.length - 1) {
+    imgIndex[changeImageValue6]++;
+    sixthCarousel();
+  } else if (imgIndex[changeImageValue6] == currentArray6.length - 1) {
+    imgIndex[changeImageValue6] = 0;
+    sixthCarousel();
+  }
+}
+
+function prevImage6() {
+  if (imgIndex[changeImageValue6] > 0) {
+    imgIndex[changeImageValue6]--;
+    sixthCarousel();
+  } else if (imgIndex[changeImageValue6] == 0) {
+    imgIndex[changeImageValue6] = currentArray6.length - 1;
+    sixthCarousel();
+  }
+}
+
+
+function seventhCarousel() {
+  if (currentArray7 && itemMainImg7) {
+    itemMainImg7.setAttribute("src", currentArray7[imgIndex[changeImageValue7]]);
+  }
+}
+
+function nextImage7() {
+  if (imgIndex[changeImageValue7] < currentArray7.length - 1) {
+    imgIndex[changeImageValue7]++;
+    seventhCarousel();
+  } else if (imgIndex[changeImageValue7] == currentArray7.length - 1) {
+    imgIndex[changeImageValue7] = 0;
+    seventhCarousel();
+  }
+}
+
+function prevImage7() {
+  if (imgIndex[changeImageValue7] > 0) {
+    imgIndex[changeImageValue7]--;
+    seventhCarousel();
+  } else if (imgIndex[changeImageValue7] == 0) {
+    imgIndex[changeImageValue7] = currentArray7.length - 1;
+    seventhCarousel();
   }
 }
 // ========== CHANGE IMAGES - CATALOGO ITEM SECTIONS ========== //
