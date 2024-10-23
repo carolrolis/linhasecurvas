@@ -68,7 +68,7 @@ header {
   z-index: 1;
   font-size: 1.5rem;
   font-weight: normal;
-  height: 110px;
+  height: 105px;
   background-color: rgba(255, 255, 255, 0.607);
   display: flex;
   justify-content: space-between;
@@ -254,7 +254,7 @@ nav {
 
 /********** HOME - BENEFITS SECTION **********/
 #home-benefits {
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto 130px;
   display: flex;
   flex-direction: column;
@@ -267,17 +267,18 @@ nav {
   margin-bottom: 40px;
   display: flex;
   flex-direction: row;
+  gap: 16px;
   align-items: center;
 }
 
-.benefits img {
+.benefits-img {
   min-width: 10%;
 }
 
 .benefits-text {
+  font-size: 1.5rem;
   font-weight: lighter;
   max-width: 85%;
-  margin-left: 16px;
 }
 
 /********** HOME - BENEFITS SECTION **********/
@@ -364,7 +365,10 @@ nav {
 .catalogo-item-conteudo,
 .catalogo-item-conteudo-2,
 .catalogo-item-conteudo-3,
-.catalogo-item-conteudo-4 {
+.catalogo-item-conteudo-4,
+.catalogo-item-conteudo-5,
+.catalogo-item-conteudo-6,
+.catalogo-item-conteudo-7 {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -376,7 +380,10 @@ nav {
 .catalogo-item-texto h2,
 .catalogo-item-texto-2 h2,
 .catalogo-item-texto-3 h2,
-.catalogo-item-texto-4 h2 {
+.catalogo-item-texto-4 h2,
+.catalogo-item-texto-5 h2,
+.catalogo-item-texto-6 h2,
+.catalogo-item-texto-7 h2 {
   font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 15px;
@@ -385,7 +392,10 @@ nav {
 .catalogo-item-texto p,
 .catalogo-item-texto-2 p,
 .catalogo-item-texto-3 p,
-.catalogo-item-texto-4 p {
+.catalogo-item-texto-4 p,
+.catalogo-item-texto-5 p,
+.catalogo-item-texto-6 p,
+.catalogo-item-texto-7 p {
   font-size: 1.2rem;
   font-weight: normal;
   margin-bottom: 15px;
@@ -394,7 +404,10 @@ nav {
 .catalogo-carousel,
 .catalogo-carousel-2,
 .catalogo-carousel-3,
-.catalogo-carousel-4 {
+.catalogo-carousel-4,
+.catalogo-carousel-5,
+.catalogo-carousel-6,
+.catalogo-carousel-7 {
   position: relative;
   width: 400px;
   display: flex;
@@ -405,7 +418,10 @@ nav {
 .catalogo-img-carousel,
 .catalogo-img-carousel-2,
 .catalogo-img-carousel-3,
-.catalogo-img-carousel-4 {
+.catalogo-img-carousel-4,
+.catalogo-img-carousel-5,
+.catalogo-img-carousel-6,
+.catalogo-img-carousel-7 {
   max-width: 400px;
   height: 400px;
   object-fit: contain;
@@ -423,7 +439,13 @@ nav {
 .catalogo-left-arrow-3,
 .catalogo-right-arrow-3,
 .catalogo-left-arrow-4,
-.catalogo-right-arrow-4 {
+.catalogo-right-arrow-4,
+.catalogo-left-arrow-5,
+.catalogo-right-arrow-5,
+.catalogo-left-arrow-6,
+.catalogo-right-arrow-6,
+.catalogo-left-arrow-7,
+.catalogo-right-arrow-7 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -434,14 +456,20 @@ nav {
 .catalogo-left-arrow,
 .catalogo-left-arrow-2,
 .catalogo-left-arrow-3,
-.catalogo-left-arrow-4 {
+.catalogo-left-arrow-4,
+.catalogo-left-arrow-5,
+.catalogo-left-arrow-6,
+.catalogo-left-arrow-7 {
   left: 0;
 }
 
 .catalogo-right-arrow,
 .catalogo-right-arrow-2,
 .catalogo-right-arrow-3,
-.catalogo-right-arrow-4 {
+.catalogo-right-arrow-4,
+.catalogo-right-arrow-5,
+.catalogo-right-arrow-6,
+.catalogo-right-arrow-7 {
   right: 0;
 }
 
@@ -452,7 +480,13 @@ nav {
 .catalogo-left-arrow-3:hover,
 .catalogo-right-arrow-3:hover,
 .catalogo-left-arrow-4:hover,
-.catalogo-right-arrow-4:hover {
+.catalogo-right-arrow-4:hover,
+.catalogo-left-arrow-5:hover,
+.catalogo-right-arrow-5:hover,
+.catalogo-left-arrow-6:hover,
+.catalogo-right-arrow-6:hover,
+.catalogo-left-arrow-7:hover,
+.catalogo-right-arrow-7:hover {
   opacity: 100%;
 }
 
@@ -487,19 +521,14 @@ footer h1 {
 #contact {
   display: flex;
   flex-direction: row;
+  gap: 8px;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
 }
 
-#contact h2 {
-  font-weight: normal;
-  margin-right: 10px;
-}
-
 .contact-link {
   background-color: white;
-  margin-right: 8px;
 }
 
 .contact-link:hover {
@@ -509,9 +538,14 @@ footer h1 {
   #path1whats,
   #path2whats,
   #path3whats,
+  #path21whats,
+  #path22whats,
   #path1insta,
   #path2insta,
   #path3insta,
+  #path21insta,
+  #path22insta,
+  #path23insta,
   #Icon-Setmail,
   #tspan1whats,
   #tspan1insta {
@@ -564,21 +598,44 @@ footer h1 {
 #scroll-top:hover {
   background-color: #a0a0a0aa;
 }
+
 /********** SCROLL TO TOP BUTTON *********/
 
 
 
 /* Media Queries */
 /* Landscape phones and down */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .benefits {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  .benefits-img {
+    max-width: 30%;
+  }
+  #text1whats, #text1insta {
+    display: none;
+  }
+  #svg1whats, #svg1insta {
+    display: none;
+  }
+  #whats, #insta {
+    width: 60px;
+  }
+}
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  #home-benefits {
+    max-width: 80%;
+  }
+}
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {}
-
-/* Large desktop */
-@media (min-width: 1200px) {}
+@media (min-width: 768px) and (max-width: 979px) {
+  #home-benefits {
+    max-width: 80%;
+  }
+}
 
 /* Media Queries */
