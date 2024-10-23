@@ -68,7 +68,7 @@ header {
   z-index: 1;
   font-size: 1.5rem;
   font-weight: normal;
-  height: 19%;
+  height: 110px;
   background-color: rgba(255, 255, 255, 0.607);
   display: flex;
   justify-content: space-between;
@@ -225,7 +225,6 @@ nav {
 }
 
 #home-carousel-div-js {
-  max-width: 1320px;
   width: 100%;
 }
 
